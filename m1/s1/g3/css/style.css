@@ -7,6 +7,7 @@ body header{
 }
 .inizio-p{
     background-color: rgba(237, 220, 94, 0.238);
+    margin-top: 13;
 }
 
 .logo{
@@ -17,7 +18,7 @@ p span{
 }
 main{
     display: block;
-    max-width: 780px;
+    max-width: 730px;
     font-family: 'Roboto', sans-serif;
 
     margin: 0 auto;
