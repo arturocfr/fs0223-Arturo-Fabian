@@ -1,75 +1,122 @@
 /* IMPOSTAZIONI GENERALI */
-  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-body{
-    padding: 35px;
-    background-image: url(../img/sfondo.png);
-    font-family: 'Roboto', sans-serif;
 
-}
-.color-white{
-    color:aliceblue
-}
-.b-v{
-    font-weight: bold;
-    color: blueviolet;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body{
+    background-image: url(../img/sfondo.png);
+    padding: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size:1.3rem;
 }
 h1{
-    font-size: 2.8rem;
-    margin:30px 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+
 }
 h2{
-    font-size: 1.2rem;
-    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
 }
-.sfondo-grigio{
-    background-color: rgb(158, 158, 158);
+.h2no-b{
+    text-align: start;
+    font-weight: 400;
+    margin-top: 30px;
 }
 
 /* HEADER */
 header{
-    background-color: aqua;
-    text-align: center;
-    padding: 30px;
-}
-.logo-h img{
-    margin: 20px 0;
-    width: 300px;;
+    background-color: rgb(46, 180, 187);
+    padding: 30px 20px;
+    box-shadow: inset;
+    color: white;
+    margin: 30px 0;
+    box-shadow:0px 10px 5px #3d3d3d;
 
 }
-.title-h{
-    margin-bottom: 20px;
-    font-size: large;
-}
-.menu-h li{
-    margin: 5px 0;
-    list-style-type: none;
-    font-size: large;
+.logo{
+    width: 300px;
 
 }
-.menu-h li a{
-    text-decoration: none;
-    color:aliceblue
+#col-aut{
+    color: #888686a2;
 }
-
-
+#vio{
+    color: rgb(157, 24, 124);
+    font-weight: bold;
+}
 /* MAIN */
-main{
-    background-color: rgb(255, 254, 253);
-    padding: 20px 15px;
+.c-header{
+    text-align: center;
+}
+ul{
+    display: block;
+    padding:0 40px;
+}
+ol{
+    display: block;
+    padding:0 40px;
 
 }
-article .p-pub {
-    margin-bottom: 20px;
+.lista a::before{
+    content:"⇒";
 }
-.ul-1{
-    margin-bottom: 20 px;
+.lista a::after{
+    content:"⇐";
+
+    
 }
-.p-pubsu{
-    margin-top: 20px;
+ul li code{
+    background-color: rgba(134, 134, 134, 0.544);
+    border-radius: 8px;
+}
+.lista a{
+    color: white;
+    text-decoration: none
+    
+    
+    
+}
+.lista{
+    margin: 15px;
+    color:white;
+    list-style-type: none;
+    
+    
+}
+
+main{
+    background-color: white;
+    padding: 40px 30px;
+    box-shadow: 0px 10px 5px #3d3d3d;
+    margin-bottom:30px;
+
+}
+p{
+    margin:19px 0 ;
+}
+table{
+    display: block;
+    padding:0 40px;
+    
+    
+    border-collapse: collapse;
+}
+tr {
+    border: medium solid #00f;
+}
+thead{
+    background-color: #00f;
+
 }
 
 
 /* ELEMENTI NEL MAIN - ARTICLE */
+.bgrigio{
+    background-color: rgba(174, 176, 177, 0.468);
+    padding: 15px;
+    margin: 15px;
+}
 
 /* TABELLE */
 
@@ -78,3 +125,8 @@ article .p-pub {
 /* ELEMENTI NELL' ASIDE */
 
 /* FOOTER */
+footer{
+    background-color: rgb(46, 180, 187);
+    padding: 40px 30px;
+    box-shadow: 0px 10px 5px #3d3d3d;
+}
