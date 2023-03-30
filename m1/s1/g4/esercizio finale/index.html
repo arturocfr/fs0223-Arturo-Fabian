@@ -10,49 +10,50 @@
     <link rel="stylesheet" href="assets/css/font-awesome.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
     <header>
-        <div class="logo-h">
-            <img src="assets/img/logo.svg" alt="logo del blog">
-            <p class="title-h color-white">EPICODE-IL BLOG DEI DEVELOPERS</p>
+        <div class="c-header">
+            <div>
+                <img class="logo" src="assets/img/logo.svg" alt="logo del blog">
+                <p>EPICODE-IL BLOG DEI DEVELOPERS</p>
+            </div>
+                <nav>
+                    <ul>
+                        <li class="lista"><a href="index.html" title="Home Page">HOME</a></li>
+                        <li class="lista"><a href="articoli.html" title="Elenco degli articoli tecnici pubblicati">ARTICOLI</a></li>
+                        <li class="lista"><a href="contatti.html" title="Candidati inviando un tuo cv">JOB</a></li>
+                    </ul>
+                </nav>
+            
         </div>
-        <nav>
-            <ul class="menu-h color-white">
-                <li><a href="index.html" title="Home Page">Home</a></li>
-                <li><a href="articoli.html" title="Elenco degli articoli tecnici pubblicati">Articoli</a></li>
-                <li><a href="contatti.html" title="Candidati inviando un tuo cv">Job</a></li>
-            </ul>
-        </nav>
-
     </header>
+
 
     <main>
         <article>
             <h1>Come creare un template per i post</h1>
-            <p class="p-pub"><i class="fas fa-pen"></i></i>di Mario Rossi - <span><i class="fas fa-clock"></i></i> pubblicato il 25-10-2020</span></p>
+            <p id="col-aut"><i class="fas fa-pen"></i>di Mario Rossi - <span><i class="fas fa-clock"></i>pubblicato il 25-10-2020</span></p>
 
-            <p class="p-pub">La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le <strong class="b-v">parti comuni</strong> da applicare a tutte le pagine</p>
+            <p>La prima cosa da fare è suddividere in blocchi logici la pagina, identificando le <strong id="vio">parti comuni</strong> da applicare a tutte le pagine</p>
 
-            <p class="p-pub">Le varie aree saranno quindi suddivise in:</p>
-     
-            <ul class="ul-1">
+            <p>Le varie aree saranno quindi suddivise in:</p>
+            <ul>
                 <li>Contenuti di intestazione del tag <code>&lt;header&gt;</code></li>
                 <li>Contenuti centrali variabili del tag <code>&lt;main&gt;</code> (corpo principale)</li>
                 <li>Contenuti di fine pagina comuni, da inserire nel tag <code>&lt;footer&gt;</code></li>
             </ul>
-    
 
-            <h2>Formattazione del codice</h2>
-            <p class="p-pub">Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da <span class="b-v">selezionare con i CSS</span>. Perciò i passi saranno:</p>
+            <h2 class="h2no-b">Formattazione del codice</h2>
+            <p>Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da <strong id="vio">selezionare con i CSS</strong>. Perciò i passi saranno:</p>
             <ol>
                 <li>Progettare su carta il markup finale, assegnando ad ogni specifico testo il tag appropriato</li>
                 <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
                 <li>Applicare gli stili CSS</li>
             </ol>
 
-            <p class="p-pubsu">L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressoché totale.</p>
-            <table class="p-pubsu">
+            <p>L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressoché totale.</p>
+
+            <table>
                 <caption>Diffusione dei CSS</caption>
                 <thead>
                     <tr>
@@ -90,11 +91,11 @@
                 </tbody>
             </table>
 
-            <p class="p-pubsu">Un test di validazione potrà essere fatto tramite il <a href="https://jigsaw.w3.org/css-validator/" target="blank" title="Validatore CSS online del W3C">tool online</a> dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro:</p>
-            <div class="p-pubsu">
+            <p>Un test di validazione potrà essere fatto tramite il <a href="https://jigsaw.w3.org/css-validator/" target="blank" title="Validatore CSS online del W3C">tool online</a> dedicato allo scopo. Una volta ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come loro:</p>
+
             <iframe width="300" height="300" src="https://www.youtube.com/embed/dvOvHXruEDM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <section class="sfondo-grigio">
+
+            <section class="bgrigio">
                 <h2>Novità</h2>
                 <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
                 
@@ -110,19 +111,19 @@
 
         <aside>
             <h2>Articoli correlati</h2>
-            <div class="sfondo-grigio">
+            <div class="bgrigio">
                 <a href="post2.html" title="Passaggi guidati per validare correttamente tutto il codice sviluppato">Validare il codice HTML</a>
                 <p>Categoria: develop</p>
                 <p>Data: 18-9-2020</p>
             </div>
 
-            <div class="sfondo-grigio">
+            <div class="bgrigio">
                 <a href="post3.html" title="Passaggi guidati per controllare e correggere tutto il codice sviluppato">Correggere la sintassi</a>
                 <p>Categoria: develop</p>
                 <p>Data: 16-9-2020</p>
             </div>
 
-            <div class="sfondo-grigio">
+            <div class="bgrigio">
                 <a href="post4.html" title="Consigli ed approcci per ridurre il peso della pagina">Meno Kb nella pagina</a>
                 <p>Categoria: ottimizzazione</p>
                 <p>Data: 30-9-2020</p>
@@ -130,7 +131,6 @@
         </aside>
     </main>
 
-    <hr>
 
     <footer>
         <p>Blog Epicode &copy;2021</p>
