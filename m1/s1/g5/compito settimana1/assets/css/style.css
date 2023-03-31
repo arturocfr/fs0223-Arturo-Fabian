@@ -10,6 +10,13 @@ h1 , h2 ,h3 {
     font-family: 'Montserrat', sans-serif;
     line-height: 1,5;
     font-size: 40px ;
+    color: rgb(45, 96, 96);
+}
+h2{
+    font-size: 25px;
+}
+p{
+    font-size: 23px;
 }
 
 * {box-sizing: border-box;}
@@ -28,6 +35,8 @@ header img{
     padding: 50px 50px;
     background-position: center;
     background-repeat: no-repeat;
+
+
     
 }
 
@@ -38,9 +47,31 @@ header img{
     margin: 30px 0;
 }
 .marginr form a{
-    background-color: rgba(232, 104, 0, 0.31);
+    background-color: rgba(255, 115, 1, 0.54);
     border-radius: 7px;
     text-decoration: none;
     padding: 5px 30px ;
     color: white;
 }
+.spazio-ok{
+    margin: 30px;
+}
+.spazio-ok .ah2{
+    margin-top: 100px;
+}
+.border-lat{
+    border: 20px  black;
+    box-shadow: 1px 1px 1px #000;
+    
+}
+
+.rotondo{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    
+
+
+
+}
+
