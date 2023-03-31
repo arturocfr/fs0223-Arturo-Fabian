@@ -69,9 +69,38 @@ header img{
     border-radius: 50%;
     width: 300px;
     height: 300px;
-    
-
-
+}
+.imgbanner2{
+    background-color: rgba(222, 43, 7, 0.86);
+    padding: 50px 50px;
+}
+#t-arancione{
+    color: white;
+}
+.marginr .let-bi{
+    color: white;
 
 }
+.contenitore{
+    border: 1px solid #d0caca;
+    margin:40px 30px;
 
+}
+.contenitore .lettere-aside{
+    padding: 30px;
+
+}
+.img-aside{
+    width: 439px;
+    position: center;
+    
+}
+
+
+
+
+
+footer{
+    background-color: rgb(46, 159, 163);
+    padding: 40px 100px;
+}
