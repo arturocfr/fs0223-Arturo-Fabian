@@ -1,0 +1,16 @@
+/* Your styles here */
+body{
+    text-align: center;
+}
+header{
+    background-color: black;
+    padding: 40px 100px;
+    
+}
+header img{
+    width: 190px;
+    box-sizing: border-box;
+}
+.img1{
+    
+}
