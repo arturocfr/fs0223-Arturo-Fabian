@@ -104,3 +104,11 @@ footer{
     background-color: rgb(46, 159, 163);
     padding: 40px 100px;
 }
+#block{
+    display: block;
+}
+#titolofooter{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px ;
+    color: rgb(45, 96, 96);
+}
