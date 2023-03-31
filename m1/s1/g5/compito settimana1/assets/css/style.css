@@ -1,7 +1,19 @@
 /* Your styles here */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
 body{
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.65;
+
 }
+h1 , h2 ,h3 {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1,5;
+    font-size: 40px ;
+}
+
+* {box-sizing: border-box;}
+
 header{
     background-color: black;
     padding: 40px 100px;
@@ -11,6 +23,24 @@ header img{
     width: 190px;
     box-sizing: border-box;
 }
-.img1{
+.imgbanner{
+    background-image: url(../images/banner.jpg);
+    padding: 50px 50px;
+    background-position: center;
+    background-repeat: no-repeat;
     
+}
+
+.marginr h1{
+    margin: 30px 0;
+}
+.marginr  form{
+    margin: 30px 0;
+}
+.marginr form a{
+    background-color: rgba(232, 104, 0, 0.31);
+    border-radius: 7px;
+    text-decoration: none;
+    padding: 5px 30px ;
+    color: white;
 }
