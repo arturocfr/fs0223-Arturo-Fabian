@@ -118,14 +118,29 @@ if(num1 + num2 == 8 || num1 - num2 == 8 ){
   let variabile_2 = 20;
   let variabile_3 = 30;
 
-  let valore _alto;
-  let arr = [];
+  let piccolo;
+  let medio;
+  let grande;
+
   if(variabile_1 > variabile_2 && variabile_1 > variabile_3){
-    arr.push(variabile_1);
+    grande = variabile_1;
+  
+  }else if (variabile_1 < variabile_2 && variabile_1 < variabile_3){
+    piccolo = variabile_1;
 
+  }else{
+    medio = variabile_1;
+  }
+  if(variabile_2 > variabile_1 && variabile_2 > variabile_3){
+    grande = variabile_2;
+
+  }else if{
+    variabile_2
   }
 
   }
+
+  
 
 
 /* ESERCIZIO 8
