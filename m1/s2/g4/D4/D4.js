@@ -62,7 +62,7 @@
   {
     name: "Beru Whitesun lars",
     height: "165",
-    mass: "75",
+    mass: "13",
     hair_color: "brown",
     skin_color: "light",
     eye_color: "blue",
