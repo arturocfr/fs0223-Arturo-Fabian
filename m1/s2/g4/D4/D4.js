@@ -175,14 +175,14 @@ console.log(eyeColor);
   Usa un while loop per calcolare la massa totale dell'equipaggio
   */
 let index = 0;
-let totalMass = 0;
+let totaleMassa = 0;
 
 while (index < starWarsCharacters.length) {
-  totalMass += Number(starWarsCharacters[index].mass);
+  totaleMassa += Number(starWarsCharacters[index].mass);
   index++;
 }
 
-console.log(`La massa totale dei protagonisti ${totalMass}`);
+console.log(`La massa totale dei protagonisti ${totaleMassa}`);
 /* ESERCIZIO 7
 
 Crea uno switch statement per rivelare la tipologia di carico, utilizzando la massa totale, di un'impotetica astronave contenente i personaggi dell'array "starWarsCharacters"
@@ -197,19 +197,19 @@ Se la massa è superiore a 1000 stampa in console: "DANGER! OVERLOAD ALERT: Jump
 Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
 switch (true) {
-  case (totalMass < 500):
+  case (totaleMassa < 500):
     console.log("Ship is under loaded");
     break;
-  case (totalMass == 500):
+  case (totaleMassa == 500):
     console.log("Ship is half loaded");
     break;
-  case (totalMass > 700 && totalMass < 900):
+  case (totaleMassa > 700 && totaleMassa < 900):
     console.log("Warning: Load is over 700");
     break;
-  case (totalMass >= 900 && totalMass < 1000):
+  case (totaleMassa >= 900 && totaleMassa < 1000):
     console.log("Critical Load: Over 900");
     break;
-  case (totalMass > 1000):
+  case (totaleMassa > 1000):
     console.log("DANGER! OVERLOAD ALERT: Jump ship now!");
     break;
 }
