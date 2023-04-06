@@ -245,7 +245,8 @@ Usa uno più for loop per raggiungere il risultato
 
 Una volta fatto crea un conosle.log per controllare la proprietà length di "characters" prima e dopo l'operazione
 */
-for (let i = 0; i < characters.length; i++) {
+
+/*for (let i = 0; i < characters.length; i++) {
   for (let x = 0; x < femaleCharacters.length; x++) {
     
   }
