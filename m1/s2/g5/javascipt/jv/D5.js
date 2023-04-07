@@ -24,13 +24,22 @@ let ordinePet = pets.sort();
 for (let x = 0; x < ordinePet.length; x++) {
   console.log(ordinePet[x]);
 }
+console.log(`----fine esrcizio 2----`)
 /* ESERCIZIO 3
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
 */
-
+let invertitoPet = pets.reverse();
+for (let x = 0; x < invertitoPet.length; x++) {
+  console.log(invertitoPet[x]);
+}
+console.log(`----fine esercizio 3----`)
 /* ESERCIZIO 4
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
 */
+
+let elemento = pets.shift();
+pets.push(elemento);
+console.log(pets);
 
 /* ESERCIZIO 5
     Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà "licensePlate" con valore a tua scelta.
