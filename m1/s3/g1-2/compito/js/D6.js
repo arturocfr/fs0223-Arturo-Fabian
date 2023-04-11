@@ -56,7 +56,9 @@ console.log(crazyDiff(19));
  se n è uguale a 400.
 */
 function boundary(n) {
-    return n >= 20 && n <= 100 || n == 400 ? true : false;
+    if(20 <= n <= 100 || n == 400 ){
+        return true
+    }
 }
 console.log(boundary(120));
 
