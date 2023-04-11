@@ -106,13 +106,25 @@ check3and7(64);
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
+function reverseString(str) {
+    console.log(`La parola ${str} scritta al contrario è ` + str.split('').reverse().join(''));
+}
+reverseString('Cucchiao');
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
 
-
+function upperFirst(str) {
+    let newStr = str.split(' ');
+    for (let stringa of newStr) {
+        stringa[0] = stringa[0].toUpperCase();
+    }
+    finalArr = newStr.join(' ');
+    console.log(finalArr);
+}
+upperFirst("Javascript!");
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
