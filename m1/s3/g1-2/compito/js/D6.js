@@ -116,6 +116,12 @@ reverseString('Cucchiao');
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
 
+
+/* ESERCIZIO 9
+ Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
+ della stringa originale.
+*/
+
 function upperFirst(str) {
     let newStr = str.split(' ');
     for (let stringa of newStr) {
@@ -125,11 +131,6 @@ function upperFirst(str) {
     console.log(finalArr);
 }
 upperFirst("Javascript!");
-/* ESERCIZIO 9
- Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
- della stringa originale.
-*/
-
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
