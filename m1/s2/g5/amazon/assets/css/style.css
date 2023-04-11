@@ -109,6 +109,10 @@ h3 {
     width: 340px;
     height: 340px;
     margin: 0 7px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px
 
     
 
@@ -118,7 +122,9 @@ h3 {
     width: 340px;
     height: 340px;
     margin: 0 7px;
+    background-size: cover;
     display: inline-block;
+    border-radius: 10px
 
 }
 .sezioni3{
@@ -127,6 +133,9 @@ h3 {
     width: 340px;
     height: 340px;
     margin: 0 7px;
+    background-size: cover;
+    border-radius: 10px
+   
 
 }
 .visore{
