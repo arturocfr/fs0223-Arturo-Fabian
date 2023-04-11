@@ -116,21 +116,37 @@ reverseString('Cucchiao');
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
 
+function upperFirst(str) {
+    let wordsArray = string.split("");
+    let capitalizedWords = [];
+    for (let word of wordsArray) {
+
+        let firstLetter = word[0].toUpperCase();
+        console.log(firstLetter);
+        word = firstLetter + word.slice(1);
+    }
+
+}
+
+
+
+console.log(risultato)
+upperFirst("Javascript!");
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
 */
 
-function upperFirst(str) {
-    let newStr = str.split(' ');
-    for (let stringa of newStr) {
-        stringa[0] = stringa[0].toUpperCase();
-    }
-    finalArr = newStr.join(' ');
-    console.log(finalArr);
+function cutString(str) {
+    arr = str.split('');
+    arr.pop();
+    arr.shift();
+    newArr = arr.join('');
+    console.log(newArr);
 }
-upperFirst("Javascript!");
+
+cutString("Parallelepipedo");
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
