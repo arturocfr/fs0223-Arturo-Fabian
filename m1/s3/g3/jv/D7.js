@@ -252,27 +252,8 @@ console.log(getMillennialMovies());
 /* ESERCIZIO 14
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
-function searchMovieById(id) {
-  let index = movies.findIndex(v => v.imdbID == id);
-  return movies[index];
-}
-
-
-console.log("Ecco i dettagli del film ricercato:");
-console.log(searchMovieById("tt0848228"));
-
 
 
 /* ESERCIZIO 15
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
-function anotherSommaButForMovies() {
-  let res = 0;
-  for (el of movies) {
-    res += parseInt(el.Year);
-  }
-  return res;
-}
-
-
-console.log(`La somma degli anni di uscita di tutti i film è: ${anotherSommaButForMovies()}`);
