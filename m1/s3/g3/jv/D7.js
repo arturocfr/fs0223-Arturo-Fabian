@@ -19,7 +19,7 @@ function giveRandomArr() {
   }
   return arr;
 }
-console.log(`Ecco il nostro array con 10 elementi random:`);
+console.log(`Ecco l'array con 10 elementi random:`);
 console.log(giveRandomArr());
 
 /* ESERCIZIO 3
