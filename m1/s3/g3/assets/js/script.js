@@ -109,7 +109,7 @@
        /* ESERCIZIO 9
           Scrivi una funzione che rimuova l'ultima lettera dall'h1 ogni volta che l'utente lo clicca
          */
-   
+      let myH1 = document.querySelector('h1');
       const makeItClickable = function () {
          myH1.textContent = myH1.textContent.substring(0, myH1.textContent.length - 1);
       }
