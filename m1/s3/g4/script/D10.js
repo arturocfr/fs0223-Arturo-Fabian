@@ -318,7 +318,6 @@ let myOb = {
   genere : "Giallo"
 }
 
-console.log(myOb);
 console.log('Oggetto dopo eliminazione di una proprietà:');
 console.log(deleteProp(myOb, 'genere'));
 
@@ -348,8 +347,7 @@ function onlyTheYears() {
   return movies.map(x => x.Year);
 }
 
-console.log("Un'array contenete solo le date di uscite dei Film:");
-console.log(onlyTheYears());
+console.log(`unarray contenete solo le date di uscite dei Film: ${onlyTheYears()}`);
 
 /* ESERCIZIO 15
   Scrivi una funzione chiamata "onlyInLastMillennium" che ritorna solamente i film prodotto nel millennio scorso contenuti nell'array "movies" fornito.
@@ -359,8 +357,7 @@ function onlyInLastMillennium() {
   return movies.filter(x => x.Year >= 2000);
 }
 
-console.log("Un'array contenete solo i Film usciti dal 2000 in poi:");
-console.log(onlyInLastMillennium());
+console.log(`Un'array contenete solo i Film usciti dal 2000 in poi: ${onlyInLastMillennium()}`);
 
 /* ESERCIZIO 16
   Scrivi una funzione chiamata "sumAllTheYears" che ritorna la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array "movies" fornito.
@@ -451,6 +448,10 @@ function emptyUl() {
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
+function addTestClasstoTr() {
+  let trArr = document.querySelectorAll('tr');
+  trArr.forEach(x => x.classList.add('test'));
+}
 
 // [EXTRA] JS Avanzato
 
