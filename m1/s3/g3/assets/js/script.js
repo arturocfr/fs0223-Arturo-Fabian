@@ -1,4 +1,4 @@
- /* ESERCIZIO 1
+/* ESERCIZIO 1
        Scrivi una funzione per cambiare il titolo della pagina in qualcos'altro
     */
 
@@ -42,8 +42,16 @@
        /* ESERCIZIO 4
           Scrivi una funzione che cambi la proprietà href di ogni link (tranne quello nel footer) con il valore https://www.google.com
          */
+          const changeUrls = function () {
+            let aArr = document.querySelectorAll('a:not(footer a)');
+            for (let a of aArr) {
+            a.href = "https://www.google.com";
+            }
+         }
+        
+        changeUrls();
    
-      const changeUrls = function () {}
+      
      
    
        
@@ -109,12 +117,12 @@
        /* ESERCIZIO 9
           Scrivi una funzione che rimuova l'ultima lettera dall'h1 ogni volta che l'utente lo clicca
          */
-      let myH1 = document.querySelector('h1');
+      let h1 = document.querySelector('h1');
       const makeItClickable = function () {
-         myH1.textContent = myH1.textContent.substring(0, myH1.textContent.length - 1);
+         h1.textContent = h1.textContent.substring(0, h1.textContent.length - 1);
       }
       
-      myH1.addEventListener('click', makeItClickable);
+      h1.addEventListener('click', makeItClickable);
    
        /* ESERCIZIO 10
           Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
