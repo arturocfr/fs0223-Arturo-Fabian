@@ -1,0 +1,144 @@
+#content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+}
+
+/* titolo */
+#title{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.bold {
+    font-weight: bold;
+    font-size: 4rem;
+}
+.summary {
+    font-size: 1.5rem;
+}
+
+/* content */
+#result {
+    display: flex;
+    margin-bottom: 3rem;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.answer {
+    font-size: 3rem;
+}
+.questions {
+    font-size: 1.2rem;
+}
+.perc-result:last-of-type{
+    text-align: right;
+}
+#chart{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    /* background-image: conic-gradient(#00ffff 36deg, #d20094 0deg); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#chart::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+    background: radial-gradient(circle, rgb(81, 1, 121) 0%, rgba(3,14,56,1) 70%);
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* button */
+#rate button {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+    background-color: transparent;
+    border: white 2px solid;
+    padding: 1rem 4rem;
+    box-shadow: 0px 0px 40px 0px #00000054, 0px 0px 40px 0px #00000062;
+}
+#rate{
+    margin-bottom: 3rem;
+}
+
+#chart p {
+    z-index: 9;
+    font-family: 'Outfit', sans-serif;
+}
+.congrat{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.passed {
+   color: #00ffff;
+   font-size: 1.5rem;
+   margin-bottom: 1.5rem;
+   font-weight: bold;
+}
+
+.passed a {
+    color: #00ffff;
+    text-decoration: none;
+}
+.certificate{
+    padding: 0 70px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.617);
+}
+
+.popup{
+    margin-top: 40px;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.questions-popup{
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    margin: 10px 30px;
+    width: 400px;
+}
+
+.questions-popup p{
+    margin: 10px;
+}
+
+#back {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+    background-color: transparent;
+    border: white 2px solid;
+    padding: .8rem 4rem;
+    box-shadow: 0px 0px 40px 0px #00000054, 0px 0px 40px 0px #00000062;
+    margin: 20px auto;
+}
+
+#back:hover {
+    cursor: pointer;
+}
+
+.popup ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}

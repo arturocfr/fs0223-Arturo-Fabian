@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Outfit&display=swap');
+
+.background{
+    background-image:url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+    width: 100%;
+    min-width: 100vh;
+    height: 100%;
+    min-height: 100vh;
+    
+    
+}
+.logo img{
+    width: 150px;
+}
+
+span{
+    color: white;
+    font-weight: bold;
+}
+.home{
+    padding-top: 0.5em;
+    padding-right:6em;
+    padding-left:6em ;
+    padding-bottom: 0;
+   
+}
+
+.home2{
+
+    padding-top: 2em;
+    padding-left: 6em;
+
+}
+.title{
+    font-family: 'Outfit', sans-serif;
+    font-size: 60px;
+    color:#E7E7EB;
+    margin:50px 0;
+}
+.title span {
+    color:#E7E7EB;
+    font-weight: bolder;
+
+}
+.instruction{
+    font-family: 'Inter', sans-serif;
+    color: #D20094;
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+.lista{
+    font-family: 'Inter', sans-serif;
+    color:#E7E7EB;
+    margin-bottom: 106px;
+
+}
+.lista ul{
+    margin-top: 3rem;
+    list-style-type:disc;
+    padding-left: 2rem;
+}
+.lista ul li {
+    margin: 13px 0;
+}
+.lista p{
+    margin-bottom: 30px;
+    
+}
+
+
+
+
+/* checkbox */
+.checkbox-container{
+    padding-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#check-text label{
+    display: flex;
+    align-items: center;
+}
+#check-text label:hover{
+    cursor: pointer;
+}
+
+.checkbox-container span{
+    color:#E7E7EB;
+    font-family: 'Inter', sans-serif;
+    display: block;
+    padding-left: 1rem;
+}
+.checkbox-container input{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: rgba(40, 40, 40, 0);
+    color:white;
+    appearance: none;
+    border: white;
+    border-color: white;
+    border-style: solid;
+    border: 0.5px 0.5px;
+    display: block;
+}
+#miaCheckbox:checked {
+    background: white;
+}
+
+
+
+/* bottone prima pagina */
+.cont-bottone{
+    display: flex;
+    justify-content: end;
+}
+.bottone{
+    background-color: #00FFFF;
+    font-family: 'Outfit', sans-serif;
+    width: 300px;
+    height:70px;
+    font-weight: bold;
+    font-size: 30px;
+    box-shadow: 0px 0px 70px 0px #02c2fdc2, 0px 0px 70px 0px #00eeffcf;
+    border: none
+    
+}
+.bottone:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* css seconda pagina */
+.centro{
+    text-align: center;
+}
+.subtitle-star{
+    font-family: 'Outfit', sans-serif;
+    font-size: 29px;
+    color:#E7E7EB;
+    margin-top:50px;
+}
+.subtitle-star2{
+    font-family: 'Outfit', sans-serif;
+    font-size: 25px;
+    color:#E7E7EB;
+    margin-bottom:50px;
+    margin-top: 10px;
+}
+.subtitle-star3{
+    font-family: 'Outfit', sans-serif;
+    font-size: 25px;
+    color:#E7E7EB;
+    margin:50px 0;
+}
+.title-star{
+    font-family: 'Outfit', sans-serif;
+    font-size: 50px;
+    color:#E7E7EB;
+    margin:50px 0;
+    font-weight: bolder;
+}
+/* stelle */
+.fastar{
+    
+    background-color: rgba(97, 97, 97, 0.279);
+    -webkit-mask: url(../img/star.svg) no-repeat center;
+    mask: url(fastar.svg) no-repeat center;
+    height: 46px;
+    width: 47px;
+    margin:0 4px;
+}
+.star-rating{
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.fastar.selected{
+    background-image: url(../img/star.svg);
+}
+
+
+/* text area */
+.cont-text{
+    color: rgb(255, 255, 255);
+}
+.textarea{
+    background-color: rgba(67, 67, 67, 0);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    appearance: none;
+    border-color: rgb(71, 3, 116);
+    padding-left: 15px;
+    border-top: 4.5px;
+    border-left: 4px;
+    border-right: 3px;
+    height: 30px;
+    margin-bottom: 50px;
+    width: 620px;
+    outline: none
+
+}
+/* bottone */
+.cont-bottone2{
+    display: flex;
+    justify-content:center;
+}
+.bottone2{
+    background-color: #00FFFF;
+    font-family: 'Outfit', sans-serif;
+    width: 300px;
+    height:70px;
+    font-weight: bold;
+    font-size: 30px;
+    border:0px;
+    box-shadow: 0px 0px 30px 0px #02c2fdc2, 0px 0px 30px 0px #00eeffcf;
+    margin-bottom: 80px;
+}
+
+

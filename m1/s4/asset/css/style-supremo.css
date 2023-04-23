@@ -1,0 +1,86 @@
+#logo{
+    display: flex;
+    justify-content: space-between;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin: 100px 0 0 0;
+    font-family: 'Inter', sans-serif;
+}
+
+#question-container p{
+    padding: 1.5rem 3.5rem;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+#button-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+#button-container button{
+    display: block;
+    width: 350px;
+    height: 80px;
+    margin: 10px 20px;
+    text-align: center;
+    border-radius: 50px;
+    z-index: 999;
+    position: relative;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border: 2px solid white;
+    border-bottom: none;
+    /* border-bottom-color: rgba(255, 255, 255, 0.254); */
+    font-size: 1rem;
+}
+
+#button-container button::before{
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.184);
+    position: absolute;
+}
+
+#button-container button:hover::before{
+    width: 0px;
+    height: 0px;
+}
+
+#button-container button:hover{
+    cursor: pointer;
+    background-image: linear-gradient(0deg, #4b1b71, #d20094);
+    transition: 0.5s;
+}
+
+#footer{
+    display: flex;
+    margin-top: 10rem;
+    padding-bottom: 2rem;
+}
+
+#footer p, #footer span{
+    display: block;
+}
+#footer span{
+    margin-left: 0.5rem;
+    color: #d20094;
+}
+
+.answers-container{
+    width: 60%;
+}
