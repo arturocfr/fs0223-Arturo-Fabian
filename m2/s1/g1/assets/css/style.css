@@ -32,6 +32,44 @@ header {
   z-index: 2;
 
 }
+.btns-bottom-right {
+  width: 45px;
+  height: 50px;
+  position: absolute;
+  border-radius: 0.5em;
+  border: 2px solid white;
+  background-color: rgba(241, 241, 241, 0.7);
+  border-right: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.btns-bottom-right i {
+  font-size: 1.8em;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  color: #3f6bca;
+}
+
+.btns-bottom-right .fore-red {
+  color: red;
+}
+
+.first-btn {
+  right: 0;
+  bottom: 180px;
+}
+
+.sec-btn {
+  right: 0;
+  bottom: 100px;
+}
+
+.thr-btn {
+  right: 0;
+  bottom: 20px;
+}
 
 @media screen and (min-width: 800px) {
   header {
@@ -338,6 +376,13 @@ aside div {
   border: 1px solid #c3c3c3;
   margin-bottom: 1em;
   padding: 1em;
+}
+aside .fa-tag {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  font-size: 3em;
+  color: rgba(116, 113, 113, 0.7);
 }
 
 @media screen and (min-width: 1200px) {
