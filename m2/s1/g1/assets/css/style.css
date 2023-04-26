@@ -178,7 +178,7 @@ blockquote {
 h1 + p {
   color: #a0a0a0;
 }
-.txt-underline {
+.text-underline {
   display: inline-block;
   width: fit-content;
   position: relative;
@@ -190,6 +190,7 @@ h1 + p {
   position: absolute;
   bottom: -15px;
   left: 0;
+  color:#a02571;
 }
 .badge-news {
   position: absolute;
