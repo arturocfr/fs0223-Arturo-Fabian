@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body{
     color: brown;
+    padding:10px 10px;
 
 }
 h1{
     font-family: 'Roboto', sans-serif;
     font-size: 2.5rem;
     font-weight: bolder;
+    text-align: center;
 
 }
 h2{
@@ -36,7 +38,6 @@ p{
     background-color: rgb(242, 213, 134);
     border-radius: 40px;
     padding: 10px;
-    max-width: 418px;
     margin:0 auto;
 }
 .list-t{
@@ -53,9 +54,10 @@ p{
 #main-nav ul li{
     background-color: rgb(255, 234, 6);
     border-radius: 40px;
-    margin:10px;
+    margin:5px;
     padding: 10px;
     text-align: center;
+    font-size: medium;
 }
 #main-nav ul{
     font-family: 'Roboto', sans-serif;
@@ -66,14 +68,25 @@ p{
     width: 100%;
 }
 .list-p{
-    display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
-.list-p li{
+.list-p span{
     width:150px;
     cursor: pointer;
 }
+@media screen and (min-width: 600px) {
+    #main-nav{
+        background-color: rgb(242, 213, 134);
+        border-radius: 0px;
+        padding: 10px;
+        margin:0 auto;
+
+    }
+  }
+
+
 
 
 /* main */
@@ -88,7 +101,6 @@ p{
     background-color: rgb(231, 231, 130);
     border-radius: 20px;
     margin: 10px 0;
-    max-width: 450px;
 
 }
 .foto{
@@ -140,4 +152,10 @@ form button {
     margin-top:30px;
 
     
+}
+.container-product2{
+    background-color: rgb(231, 231, 130);
+    border-radius: 20px;
+    margin-top: 10px;
+
 }
