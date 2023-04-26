@@ -36,13 +36,8 @@ p{
     background-color: rgb(242, 213, 134);
     border-radius: 40px;
     padding: 10px;
-    max-width: 418px;
-    margin:0 auto;
 }
-.list-t{
-    flex-grow: 2;
 
-}
 .list-t li{
     width:100%;
     display: flex;
@@ -62,16 +57,17 @@ p{
     font-size: 20px;
     font-weight: bolder;
     list-style-type: none;
-    display: flex;
-    width: 100%;
 }
+.list-t #big-botton{
+    padding:30px;
+}
+
 .list-p{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+
 }
 .list-p li{
-    width:150px;
+    width:200px;
     cursor: pointer;
 }
 
