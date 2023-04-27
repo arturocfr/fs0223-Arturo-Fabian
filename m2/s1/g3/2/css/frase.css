@@ -21,11 +21,12 @@ main{
 #testoAlternato{
     background-color: rgb(220, 222, 211);
     font-family: 'Roboto', sans-serif;
-    font-size: 80px;
+    font-size: 40px;
     font-weight: bold;
     color: rgb(68, 68, 68);
     border: 5px solid rgb(0, 0, 0);
-    padding: 100px;
+    padding: 25px;
+    padding-right:120px;
 }
 span{
     color: rgb(18, 119, 213);
@@ -43,74 +44,74 @@ span i{
 
 }
 span i:last-child{
-    animation: boxAnimation2 3s linear 18s 3;
+    animation: boxAnimation2 3s linear 18s infinite;
     color:rgba(18, 119, 213, 0);
     position: absolute;
 
 }
 @keyframes boxAnimation {
     0% {
-      transform: translate(0px, -100px);
-      color: rgba(18, 119, 213, 0.126);
+      transform: translate(0px, -25px);
+      color: rgba(18, 119, 213, 0);
     }
     25%{
-        transform: translate(0px, 100px);
+        transform: translate(0px, 0px);
         color: rgb(18, 119, 213);
     }
     50%{
-        transform: translate(0px, -100px);
-        color: rgba(18, 119, 213, 0.126);
+        transform: translate(0px, 25px);
+        color: rgba(18, 119, 213, 0);
     }
     75%{
-        transform: translate(0px, 100px);
+        transform: translate(0px, 0px);
         color: rgb(18, 119, 213);
     }
     100%{
-        transform: translate(0px, -100px);
-        color: rgba(18, 119, 213, 0.126);
+        transform: translate(0px, -25px);
+        color: rgba(18, 119, 213, 0);
     }
   }
 @keyframes boxAnimation1 {
     0% {
-      transform: translate(0px, -100px);
-      color: rgba(18, 119, 213, 0.126);
+      transform: translate(0px, -25px);
+      color: rgba(18, 119, 213, 0);
     }
     25%{
-        transform: translate(0px, 100px);
+        transform: translate(0px, 0px);
         color: rgb(18, 119, 213);
     }
     50%{
-        transform: translate(0px, -100px);
-        color: rgba(18, 119, 213, 0.126);
+        transform: translate(0px, 25px);
+        color: rgba(18, 119, 213, 0);
     }
     75%{
-        transform: translate(0px, 100px);
+        transform: translate(0px, 0px);
         color: rgb(18, 119, 213);
     }
     100%{
-        transform: translate(0px, -100px);
-        color: rgba(18, 119, 213, 0.126);
+        transform: translate(0px, -25px);
+        color: rgba(18, 119, 213, 0);
     }
   }
 @keyframes boxAnimation2 {
     0% {
-      transform: translate(0px, -100px);
-      color: rgba(18, 119, 213, 0.126);
+      transform: translate(0px, -25px);
+      color: rgba(18, 119, 213, 0);
     }
     25%{
-        transform: translate(0px, 100px);
+        transform: translate(0px, 0px);
         color: rgb(18, 119, 213);
     }
     50%{
-        transform: translate(0px, -100px);
-        color: rgba(18, 119, 213, 0.126);
+        transform: translate(0px, 25px);
+        color: rgba(18, 119, 213, 0);
     }
     75%{
-        transform: translate(0px, 100px);
+        transform: translate(0px, 0px);
         color: rgb(18, 119, 213);
     }
     100%{
-        transform: translate(0px, -100px);
-        color: rgba(18, 119, 213, 0.126);
+        transform: translate(0px, -25px);
+        color: rgba(18, 119, 213, 0);
     }
   }
