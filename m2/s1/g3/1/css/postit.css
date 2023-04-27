@@ -44,7 +44,8 @@ p{
     align-items: center;
     box-shadow: 10px 10px 5px #12101066;
     transition: all 185ms linear;
-    position: relative;
+    
+
 
 }
 
@@ -53,34 +54,42 @@ p{
 }
 #card-1{
     background-color: rgb(224, 139, 26);
-    transform: rotate(-10deg) 
+    animation: boxAnimation 3s ease 0s 1;
+    transform: rotate(-5deg) 
 }
 #card-2{
     background-color: rgb(230, 32, 18);
+    animation: boxAnimation1 2.5s ease 0s 1;
     transform: rotate(5deg) 
 }
 #card-3{
     background-color: rgb(162, 244, 20);
+    animation: boxAnimation2 3.4s ease 0s 1;
     transform: rotate(-12deg) 
 }
 #card-4{
     background-color: rgb(22, 236, 190);
-    transform: rotate(10deg) translate(5px, -20px);
+    animation: boxAnimation3 2.7s ease 0s 1;
+    transform: rotate(10deg)
 }
 #card-5{
     background-color: rgb(12, 55, 246);
+    animation: boxAnimation4 3.8s ease 0s 1;
     transform: rotate(-11deg) 
 }
 #card-6{
     background-color: rgb(107, 34, 216);
+    animation: boxAnimation5 2.9s ease 0s 1;
     transform: rotate(-12deg) 
 }
 #card-7{
     background-color: rgb(240, 18, 170);
+    animation: boxAnimation6 3.2s ease 0s 1;
     transform: rotate(-6deg) 
 }
 #card-8{
     background-color: rgb(236, 13, 13);
+    animation: boxAnimation7 3.9s ease 0s 1;
     transform: rotate(5deg) 
 }
 body .container #cards div article:hover {
@@ -91,3 +100,76 @@ body .container #cards div article:hover {
 
 
 }
+@keyframes boxAnimation {
+    0% {
+      transform: translate(-300px, -300px);
+      background-color: rgba(224, 138, 26, 0.115);
+    }
+    100% {
+      transform: translate(0px) rotate(1075deg);
+    }
+  }
+@keyframes boxAnimation1 {
+    0% {
+      transform: translate(0px, -300px);
+      background-color: rgba(226, 197, 159, 0.041);
+    }
+    100% {
+      transform: translate(0px) rotate(1085deg);
+    }
+  }
+@keyframes boxAnimation2 {
+    0% {
+      transform: translate(0px, -300px);
+      background-color: rgba(226, 197, 159, 0.041);
+    }
+    100% {
+      transform: translate(0px) rotate(1068deg);
+    }
+  }
+  @keyframes boxAnimation3 {
+    0% {
+      transform: translate(300px, -300px);
+      background-color: rgba(224, 138, 26, 0.115);
+    }
+    100% {
+      transform: translate(0px) rotate(1090deg);
+    }
+  }
+  @keyframes boxAnimation4 {
+    0% {
+      transform: translate(-300px, 300px);
+      background-color: rgba(224, 138, 26, 0.115);
+    }
+    100% {
+      transform: translate(0px) rotate(1069deg);
+    }
+  }
+  @keyframes boxAnimation5 {
+    0% {
+      transform: translate(0px, 300px);
+      background-color: rgba(224, 138, 26, 0.115);
+    }
+    100% {
+      transform: translate(0px) rotate(-1092deg);
+    }
+  }
+  @keyframes boxAnimation6 {
+    0% {
+      transform: translate(0px, 300px);
+      background-color: rgba(224, 138, 26, 0.115);
+    }
+    100% {
+      transform: translate(0px) rotate(1074deg);
+    }
+  }
+  @keyframes boxAnimation7 {
+    0% {
+      transform: translate(300px, 300px);
+      background-color: rgba(224, 138, 26, 0.115);
+    }
+    100% {
+      transform: translate(0px) rotate(-1075deg);
+    }
+  }
+
