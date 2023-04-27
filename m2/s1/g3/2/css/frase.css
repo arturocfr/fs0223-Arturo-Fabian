@@ -7,4 +7,21 @@
 6 animare le altre 2 parole
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html,body,main{
+    width: 100%;
+    height: 100%;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#testoAlternato{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(68, 68, 68);
+    border: 2px solid rgb(0, 0, 0);
+    padding: 40px;
+}
