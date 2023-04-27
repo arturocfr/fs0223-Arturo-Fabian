@@ -50,8 +50,6 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    order: -1;
-    flex: 100%;
 }
 
 #main-nav ul li{
@@ -61,6 +59,7 @@ p{
     padding: 10px;
     text-align: center;
     font-size: medium;
+    min-width: 94px;
 }
 #main-nav ul{
     font-family: 'Roboto', sans-serif;
@@ -76,8 +75,12 @@ p{
     justify-content: space-around;
 }
 .list-p span{
-    width:150px;
+    display: flex;
+    width: 100%;
+
     cursor: pointer;
+    flex-direction: row;
+    justify-content: space-around;
 }
 @media screen and (min-width: 600px) {
     #main-nav{
