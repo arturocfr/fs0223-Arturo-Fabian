@@ -16,15 +16,101 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(184, 182, 180);
 }
 #testoAlternato{
+    background-color: rgb(220, 222, 211);
     font-family: 'Roboto', sans-serif;
-    font-size: 30px;
+    font-size: 80px;
     font-weight: bold;
     color: rgb(68, 68, 68);
-    border: 2px solid rgb(0, 0, 0);
-    padding: 40px;
+    border: 5px solid rgb(0, 0, 0);
+    padding: 100px;
 }
 span{
     color: rgb(18, 119, 213);
 }
+span i:first-child{
+    animation: boxAnimation 3s linear 0s 3;
+    color:rgba(18, 119, 213, 0);
+    position: absolute;
+
+}
+span i{
+    animation: boxAnimation1 3s linear 9s 3;
+    color:rgba(18, 119, 213, 0);
+    position: absolute;
+
+}
+span i:last-child{
+    animation: boxAnimation2 3s linear 18s 3;
+    color:rgba(18, 119, 213, 0);
+    position: absolute;
+
+}
+@keyframes boxAnimation {
+    0% {
+      transform: translate(0px, -100px);
+      color: rgba(18, 119, 213, 0.126);
+    }
+    25%{
+        transform: translate(0px, 100px);
+        color: rgb(18, 119, 213);
+    }
+    50%{
+        transform: translate(0px, -100px);
+        color: rgba(18, 119, 213, 0.126);
+    }
+    75%{
+        transform: translate(0px, 100px);
+        color: rgb(18, 119, 213);
+    }
+    100%{
+        transform: translate(0px, -100px);
+        color: rgba(18, 119, 213, 0.126);
+    }
+  }
+@keyframes boxAnimation1 {
+    0% {
+      transform: translate(0px, -100px);
+      color: rgba(18, 119, 213, 0.126);
+    }
+    25%{
+        transform: translate(0px, 100px);
+        color: rgb(18, 119, 213);
+    }
+    50%{
+        transform: translate(0px, -100px);
+        color: rgba(18, 119, 213, 0.126);
+    }
+    75%{
+        transform: translate(0px, 100px);
+        color: rgb(18, 119, 213);
+    }
+    100%{
+        transform: translate(0px, -100px);
+        color: rgba(18, 119, 213, 0.126);
+    }
+  }
+@keyframes boxAnimation2 {
+    0% {
+      transform: translate(0px, -100px);
+      color: rgba(18, 119, 213, 0.126);
+    }
+    25%{
+        transform: translate(0px, 100px);
+        color: rgb(18, 119, 213);
+    }
+    50%{
+        transform: translate(0px, -100px);
+        color: rgba(18, 119, 213, 0.126);
+    }
+    75%{
+        transform: translate(0px, 100px);
+        color: rgb(18, 119, 213);
+    }
+    100%{
+        transform: translate(0px, -100px);
+        color: rgba(18, 119, 213, 0.126);
+    }
+  }

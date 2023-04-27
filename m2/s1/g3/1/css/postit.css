@@ -74,12 +74,12 @@ p{
 }
 #card-5{
     background-color: rgb(12, 55, 246);
-    animation: boxAnimation4 3.8s ease 0s 1;
+    animation: boxAnimation4 4.2s ease 0s 1;
     transform: rotate(-11deg) 
 }
 #card-6{
     background-color: rgb(107, 34, 216);
-    animation: boxAnimation5 2.9s ease 0s 1;
+    animation: boxAnimation5 4.9s ease 0s 1;
     transform: rotate(-12deg) 
 }
 #card-7{
