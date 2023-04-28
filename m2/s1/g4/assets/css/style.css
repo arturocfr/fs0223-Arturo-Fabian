@@ -1,12 +1,201 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Spectral&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Spectral&display=swap');
 header{
     display: flex;
     flex-direction: column;
     background-color: #ffc017;
+}
+h1{
+    font-family: 'Spectral', serif;
+    font-size: 50px;
+}
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+
 
 }
 nav, .yellow-1{
+    border-bottom: 2px solid black ;
+}
+.yellow-1{
     display: flex;
-    border-bottom: 2px solid black;
+    justify-content: space-between;
+    max-height: 300px;
+    padding: 0px 20px;
+
+}
+.yellow-1 .cont-m{
+    display: none;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 20px 20px;
+    align-items: center;
+   
+
+
+}
+.menu{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    width: 40%;
+    justify-content: end;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+.menu .circle-t{
+    display: none;
+}
+.menu .circle-c{
+    display: flex;
+    align-items: center;
+    color:white;
+    border-radius: 30px;
+    background-color: black;
+    padding: 6px;
+
+}
+.cont-l{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.cont-l h1{
+    margin:20px 0px;
+}
+.cont-l h3{
+    margin:20px 0px;
+}
+
+.cont-l div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    background-color: black;
+    padding:9px;
+    border-radius: 30px;
+    width: 150px;
+    font-size: 15px;
+    margin:20px 0px;
+}
+
+
+@media screen and (min-width: 552px) {
+    .menu{
+        width:60%;
+        font-size: 15px;
+    }
+    .menu .circle-t{
+        display:flex;
+    }
+  }
+@media screen and (min-width: 553px) and (max-width: 903px) {
+    .menu{
+        width:65%;
+        font-size: 15px;
+    }
+
+    .menu .circle-t{
+        display:flex;
+    }
+    .circle, .circle-t, .circle-c{
+        margin:0px 4px 
+    }
+    h3{
+        font-size:20px;
+    
+    
+    }
+    .cont-l div{
+        font-size: 20px;
+    }
+    .yellow-1 .cont-m{
+        display: flex;
+    
+    }
+    .cont-l h1{
+        margin:5px 0px;
+    }
+    .cont-l h3{
+        margin:5px 0px;
+    }
+    
+    .cont-l div{
+        margin:5px 0px;
+    }
+
+}
+@media screen and (min-width: 904px) {
+    .yellow-1{
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 100px;
+    }
+    h1{
+        font-size: 100px;
+    }
+    h3{
+        font-size:20px;
+    }
+}
+.first-block{
+    font-family: 'Roboto', sans-serif;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.contenitori-m{
+    display: flex;
+    margin:10px 0px;
+
+}
+.contenitori-m .info-n{
+    color: rgba(0, 0, 0, 0.277);
+    font-size: 30px;
+    margin-right: 10px;
+    font-weight: bolder;
+
+}
+
+.contenitori-m .info-m div:first-child{
+    display: flex;
+    align-items: center;
+
+}
+.contenitori-m .info-m div:first-child img{
+    border-radius: 20px;
+
+    
+}
+.contenitori-m .info-m div:last-child{
+    display: flex;
+    justify-content: space-between;
+
+}
+@media screen and (min-width: 553px) and (max-width: 903px) {
+    .first-block{
+        font-family: 'Roboto', sans-serif;
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+}
+@media screen and (min-width: 904px) {
+    .first-block{
+        font-family: 'Roboto', sans-serif;
+        padding: 0px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        height: 500px;
+    }
+
+}
+.second-block{
+    border-top: 1px solid #9393935c;
 }
