@@ -214,6 +214,7 @@ nav{
     padding: 30px 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .second-block h4{
     padding: 0px 0px 20px 0px;
@@ -223,6 +224,7 @@ nav{
 .cont-trasparente{
     display: flex;
     flex-wrap: wrap;
+
 
 }
 .cont-trasparente div{
@@ -234,17 +236,21 @@ nav{
 }
 .third-block{
     font-family: 'Roboto', sans-serif;
-    padding: 30px 20px 0px 20px;
+    padding: 0px 20px 40px 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 #linea{
     border-top: 1px solid #9393935c;
     height: 2px;
+    width: 100%;
+    margin:0px 20px;
 }
 .cont-trasparente2{
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 10px;
 
 }
 .cont-trasparente2 div{
@@ -252,4 +258,35 @@ nav{
     padding: 5px 7px;
     color:#939393ba;
     margin: 5px;
+}
+.contenitori-t{
+    margin:10px 0px;
+    font-size: 12px;
+    width: 100%;
+    max-width: 800px;
+}
+.info-t{
+    display: flex;
+    justify-content: space-between;
+
+}
+.foto-t img{
+    width: 100%;
+    max-width: 300px;
+}
+.info-tt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+.info-tt div:first-child{
+    display: flex;
+    align-items: center;
+}
+.info-t .data-t{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
