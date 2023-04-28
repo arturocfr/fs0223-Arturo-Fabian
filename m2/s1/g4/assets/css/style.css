@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Spectral&display=swap');
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffc017;
+
+}
+nav, .yellow-1{
+    display: flex;
+    border-bottom: 2px solid black;
+}
