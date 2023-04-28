@@ -16,7 +16,6 @@ h3{
 }
 h4{
     font-family: 'Roboto', sans-serif;
-    padding: 20px 20px 20px 20px;
 }
 nav, .yellow-1{
     border-bottom: 2px solid black ;
@@ -204,7 +203,6 @@ nav{
         padding: 20px 20px;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
     }
 
 }
@@ -214,7 +212,6 @@ nav{
     padding: 30px 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 .second-block h4{
     padding: 0px 0px 20px 0px;
@@ -284,9 +281,28 @@ nav{
     display: flex;
     align-items: center;
 }
+.info-tt div:first-child img{
+    border-radius: 20px;
+}
 .info-t .data-t{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+}
+@media screen and (min-width: 904px) {
+    .desktop{
+        display: flex;
+        flex-direction: column;
+        padding-left: 100px;
+        justify-content: start;
+    }
+    .desktop2{
+        display: flex;
+        flex-direction: row-reverse;
+        padding-left: 100px;
+        justify-content: start;
+        border-top:  2px solid#5a5a5a4b;
+    }
 
 }
