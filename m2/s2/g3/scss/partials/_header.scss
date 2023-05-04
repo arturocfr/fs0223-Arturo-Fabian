@@ -1,0 +1,28 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+    align-items: center;
+}
+.image-container img{
+    width: 100px;
+}
+.links-container ul{
+    display: flex;
+    list-style: none;
+}
+.headline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $bg-sections-alt;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    @include title-big;
+
+    .btns-container {
+        display: flex;
+        align-items: center;
+    }
+}

@@ -1,0 +1,35 @@
+.btn-primary {
+    background-color: $btn-primary-bg-color;
+    transition: all 0.4s;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.1);
+    }
+
+}
+
+.btn-secondary {
+    background-color: $btn-secondary-bg-color;
+    transition: all 0.4s;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.1);
+    }
+
+}
+
+.btn-tertiary {
+    background-color: $btn-tertiary-bg-color;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.4s;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.1);
+    }
+
+}

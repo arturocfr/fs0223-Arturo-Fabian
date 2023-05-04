@@ -1,0 +1,23 @@
+$sizes: 2, 4, 6, 8, 10, 12;
+
+@each $size in $sizes {
+    .padding-x-#{$size} {
+        padding-left: #{$size}px;
+        padding-right: #{$size}px;
+    }
+
+    .padding-y-#{$size} {
+        padding-top: #{$size}px;
+        padding-bottom: #{$size}px;
+    }
+
+    .margin-x-#{$size} {
+        margin-left: #{$size}px;
+        margin-right: #{$size}px;
+    }
+
+    .margin-y-#{$size} {
+        margin-top: #{$size}px;
+        margin-bottom: #{$size}px;
+    }
+}
