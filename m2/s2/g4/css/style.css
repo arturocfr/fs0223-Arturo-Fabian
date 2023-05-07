@@ -54,9 +54,17 @@ body {
   padding: 0px 60px;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  background-color: #141414;
+  z-index: 5;
+}
+
 nav {
   display: flex;
   align-items: center;
+  margin-top: 13px;
 }
 
 @media screen and (min-width: 553px) and (max-width: 903px) {
@@ -121,4 +129,162 @@ nav {
 }
 .cont-end div img {
   width: 100%;
+}
+
+.service {
+  font-family: "Roboto", sans-serif;
+  color: rgb(121, 123, 124);
+}
+.service button:hover {
+  color: rgb(255, 255, 255);
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cont-img1 img {
+  width: 100%;
+}
+
+h2 {
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+.trending {
+  margin-top: 20px;
+}
+.trending h2 {
+  color: antiquewhite;
+  font-family: "Roboto", sans-serif;
+  font-size: x-large;
+  width: 170px;
+}
+
+.first-part {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.second-part {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: end;
+  color: white;
+}
+.second-part i {
+  margin-left: 20px;
+}
+.second-part i:hover {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.titolo {
+  display: flex;
+  align-items: center;
+}
+.titolo h1 {
+  color: antiquewhite;
+  font-family: "Roboto", sans-serif;
+  font-size: xx-large;
+  width: 170px;
+}
+
+.dropdown {
+  font-family: "Roboto", sans-serif;
+}
+.dropdown button {
+  font-size: 13px;
+}
+.dropdown button:hover {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  cursor: pointer;
+}
+.dropdown ul li {
+  font-size: 13px;
+}
+.dropdown ul li:hover {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 100%);
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.wrapper section {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  margin: 20px 0;
+}
+
+.wrapper section .item {
+  padding: 0 2px;
+  transition: 250ms all;
+}
+
+.wrapper section .item:hover {
+  margin: 0 40px;
+  transform: scale(1.2);
+}
+
+.wrapper section a {
+  position: absolute;
+  color: #fff;
+  text-decoration: none;
+  font-size: 6em;
+  background: black;
+  width: 80px;
+  padding: 20px;
+  text-align: center;
+  z-index: 1;
+}
+
+.wrapper section a:nth-of-type(1) {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+}
+
+.wrapper section a:nth-of-type(2) {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, black 100%);
+}
+
+@media only screen and (max-width: 600px) {
+  a.arrow__btn {
+    display: none;
+  }
+}
+footer {
+  margin-top: 100px;
+  font-family: "Roboto", sans-serif;
+  font-size: small;
+}
+footer a {
+  color: rgb(80, 80, 80);
+}
+footer button:hover {
+  color: rgb(255, 255, 255);
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

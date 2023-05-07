@@ -9,3 +9,16 @@
     font-size: 13px;
     cursor: pointer;
   }
+  @mixin li-lettersHover1 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+  }
+  @mixin li-lettersHover2 {
+    color: rgb(255, 255, 255);
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
