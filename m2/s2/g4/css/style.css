@@ -50,19 +50,26 @@ table {
   border-spacing: 0;
 }
 
+body {
+  padding: 0px 60px;
+}
+
 nav {
   display: flex;
+  align-items: center;
 }
 
 .cont-img {
-  width: 100px;
+  width: 130px;
 }
 .cont-img img {
   width: 100%;
 }
 
 .cont-1 {
-  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .cont-list ul {
@@ -71,12 +78,41 @@ nav {
 .cont-list ul li {
   margin: 15px;
   font-family: "Roboto", sans-serif;
-  font-size: 10px;
+  font-size: 13px;
   color: rgb(211, 209, 209);
 }
 .cont-list ul li:hover {
   color: rgb(255, 255, 255);
   font-weight: bold;
-  font-size: 12px;
+  font-size: 13px;
   cursor: pointer;
+}
+
+.cont-end {
+  display: flex;
+  align-items: center;
+}
+.cont-end p {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  color: rgb(211, 209, 209);
+}
+.cont-end p:hover {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+}
+.cont-end i {
+  margin: 15px;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.cont-end div {
+  width: 30px;
+  cursor: pointer;
+}
+.cont-end div img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
