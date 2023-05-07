@@ -7,6 +7,15 @@ nav{
 
 
 }
+@media screen and (min-width: 553px) and (max-width: 903px) {
+    nav{
+        flex-direction: column;
+        align-items: start;
+
+    }
+
+
+}
 .cont-img{
     width:130px;
     img{
