@@ -29,6 +29,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
   background-color: #141414;
+  font-family: "Roboto", sans-serif;
 }
 
 ol, ul {
@@ -273,6 +274,26 @@ h2 {
     display: none;
   }
 }
+.settings-body {
+  padding: 0px;
+}
+
+.cont-img2 {
+  width: 40px;
+}
+.cont-img2 img {
+  width: 100%;
+}
+
+#h2settings {
+  color: black;
+}
+
+#all {
+  width: 100%;
+  background-color: #fff;
+}
+
 footer {
   margin-top: 100px;
   font-family: "Roboto", sans-serif;
