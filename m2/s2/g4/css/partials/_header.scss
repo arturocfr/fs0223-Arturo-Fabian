@@ -1,18 +1,23 @@
+body{
+    padding:0px 60px;
+}
 nav{
     display: flex;
+    align-items: center;
 
 
 }
 .cont-img{
-    width:100px;
+    width:130px;
     img{
-        width:100%
+        width:100%;
 
     }
 }
 .cont-1{
-
-    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 .cont-list{
 
@@ -28,4 +33,29 @@ nav{
         }
     }
 
+}
+.cont-end{
+    display: flex;
+    align-items: center;
+    p{
+        @include li-letters;
+        &:hover {
+            @include li-lettersHover 
+        }
+        
+    }
+    i{
+        margin:$head-margin;
+        color: white;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+    div{
+        width:30px;
+        cursor: pointer;
+        img{
+            width: 100%;
+
+        }
+    }
 }
