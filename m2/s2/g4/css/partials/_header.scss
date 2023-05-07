@@ -1,0 +1,31 @@
+nav{
+    display: flex;
+
+
+}
+.cont-img{
+    width:100px;
+    img{
+        width:100%
+
+    }
+}
+.cont-1{
+
+    height: 100%;
+}
+.cont-list{
+
+    ul{
+        display: flex;
+        li{
+            margin:$head-margin;
+            @include li-letters;
+            &:hover {
+                @include li-lettersHover 
+              }
+              
+        }
+    }
+
+}
