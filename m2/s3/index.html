@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>JS-3 G1</title>
+</head>
+
+<body class="text-black bg-warning">
+    <header class="bg-dark border-bottom border-3 border-black d-flex align-items-center">
+    </header>
+    <div class="container">
+        <section class="my-4">
+            <h3 class="border-bottom border-2 border-danger pb-2">Form aggiunta Users</h3>
+            <div class="row justify-content-between align-items-center border-bottom border-3 border-black pb-2">
+                <div class="col-7">
+                    <div class="my-3 d-flex flex-column">
+                        <form id="form-users">
+                            <label for="usernameInput" class="form-label">Name</label>
+                            <input type="text" class="form-control mb-3" id="usernameInput"
+                                placeholder="Your name here..">
+                            <label for="surnameInput" class="form-label">Surname</label>
+                            <input type="text" class="form-control mb-3" id="surnameInput"
+                                placeholder="Your surname here..">
+                            <label for="ageInput" class="form-label">Age</label>
+                            <input type="number" class="form-control mb-3" id="ageInput" placeholder="Your age here..">
+                            <label for="emailInput" class="form-label">Email</label>
+                            <input type="email" class="form-control mb-4" id="emailInput"
+                                placeholder="Your email here..">
+                            <button type="submit" class="btn btn-danger px-4">Save User</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="my-5">
+            <h3 class="border-bottom border-2 border-danger pb-2">Form aggiunta Pets</h3>
+            <div class="row justify-content-between align-items-center">
+                <div class="col-7">
+                    <div class="my-3 d-flex flex-column">
+                        <form id="form-pets">
+                            <label for="petNameInput" class="form-label">Name</label>
+                            <input type="text" class="form-control mb-3" id="petNameInput"
+                                placeholder="Pet's name here..">
+                            <label for="ownerInput" class="form-label">Owner pet</label>
+                            <input type="text" class="form-control mb-3" id="ownerInput"
+                                placeholder="Pet's Owner here..">
+                            <label for="speciesInput" class="form-label">Species</label>
+                            <input type="text" class="form-control mb-3" id="speciesInput"
+                                placeholder="Pet's species here..">
+                            <label for="breedInput" class="form-label">Breed</label>
+                            <input type="text" class="form-control mb-4" id="breedInput"
+                                placeholder="Pet's breed here..">
+                            <div class="d-flex align-items-center">
+                                <button type="submit" class="btn btn-danger px-4">Save Pet</button>
+                                <p id="pet-info" class="my-0 fs-5 text-success d-none ms-3">Pet added correctly!</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

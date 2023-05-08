@@ -1,0 +1,19 @@
+
+header {
+    height:50px;
+}
+
+#pets-list li:hover {
+    background-color: #5a5aff !important;
+    cursor: pointer;
+}
+
+#pets-list-compare-one li:hover {
+    background-color: #808081 !important;
+    cursor: pointer;
+}
+
+#pets-list-compare-two li:hover {
+    background-color: #525252 !important;
+    cursor: pointer;
+}
