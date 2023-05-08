@@ -55,6 +55,10 @@ body {
   padding: 0px 60px;
 }
 
+#body-service {
+  padding: 0px;
+}
+
 header {
   position: sticky;
   top: 0;
