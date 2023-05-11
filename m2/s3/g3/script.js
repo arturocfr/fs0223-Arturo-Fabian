@@ -49,13 +49,7 @@ fetch('https://striveschool-api.herokuapp.com/books')
             kart = JSON.parse(kart)
             kart.push(movie);
             kart = JSON.stringify(kart);
-            sessionStorage.setItem("MOVIES", kart);
-
-
-            // let carrello = document.getElementById('carrello');
-            // let newLi = document.createElement('li');
-            // newLi.innerHTML = kart;
-            // carrello.appendChild(newLi);
+            sessionStorage.setItem("MOVIES", kart)
         })
     })
 })
