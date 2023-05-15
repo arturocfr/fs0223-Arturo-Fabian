@@ -1,0 +1,24 @@
+header img {
+  width: 45px;
+  animation: rotateLogo 4s linear 1s infinite;
+}
+
+@keyframes rotateLogo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.container .row img {
+  transition: all 1s;
+  width: 120px !important;
+}
+.container .row img:hover {
+  transform: scale(1.4);
+}
+.container .row button {
+  height: -moz-max-content;
+  height: max-content;
+}/*# sourceMappingURL=cart.css.map */

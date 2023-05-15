@@ -1,0 +1,17 @@
+form {
+    input {
+        &:focus {
+            box-shadow: 0px 0px 9px 0px $color-warning !important;
+        }
+        width: 100%;
+        @media screen and (min-width: 992px) {
+            width: 75% !important;
+        }
+    }
+
+    button {
+        @media screen and (max-width: 576px) {
+            width: 100% !important;
+        }
+    }
+}

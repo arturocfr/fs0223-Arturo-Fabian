@@ -1,0 +1,62 @@
+html,
+body {
+  height: 100%;
+}
+
+main {
+  margin-top: 90px;
+}
+main .custom-bg {
+  background-color: #343a40;
+}
+main div.row.g-3 img {
+  transition: all 1s;
+}
+main div.row.g-3 img:hover {
+  transform: scale(1.2);
+}
+main .row .col-12 img {
+  width: 220px;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  main .row .col-12 img {
+    width: 160px;
+  }
+}
+@media screen and (min-width: 576px) {
+  main .row .col-12 div.ms-sm-3 {
+    height: 100%;
+    justify-content: space-evenly;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+body::-webkit-scrollbar-thumb {
+  background: rgba(255, 193, 7, 0.7);
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: #6c757d;
+  border-radius: 10px;
+}
+
+header img {
+  width: 45px;
+  animation: rotateLogo 4s linear 1s infinite;
+}
+
+@keyframes rotateLogo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+footer i.bi {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */

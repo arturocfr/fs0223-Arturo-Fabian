@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LiZ Shop - Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/admin.css">
+</head>
+
+<body class="bg-primary-subtle text-emphasis-primary">
+    <header class="position-fixed top-0 w-100">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom border-3 border-black" data-bs-theme="dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item ms-lg-2">
+                            <a class="nav-link" aria-current="page" href="./index.html">Homepage</a>
+                        </li>
+                        <li class="nav-item ms-lg-1">
+                            <a class="nav-link active" href="./admin.html">Admin Panel</a>
+                        </li>
+                        <li class="nav-item ms-lg-1">
+                            <a class="nav-link" href="./cart.html">Your Cart</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container d-flex flex-column">
+        <main class="flex-grow-1">
+            <div id="alert-msg"></div>
+            <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog"></div>
+            </div>
+            <button id="err-trigger" class="d-none btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#myModal"></button>
+            <form id="myForm">
+                <div class="mb-3">
+                    <label for="nameInput" class="form-label">Product Name</label>
+                    <input type="text" required class="form-control bg-dark text-light border border-1 border-warning"
+                        id="nameInput">
+                </div>
+                <div class="mb-3">
+                    <label for="descriptionInput" class="form-label">Product Description</label>
+                    <input type="text" required class="form-control bg-dark text-light border border-1 border-warning"
+                        id="descriptionInput">
+                </div>
+                <div class="mb-3">
+                    <label for="brandInput" class="form-label">Product Brand</label>
+                    <input type="text" required class="form-control bg-dark text-light border border-1 border-warning"
+                        id="brandInput">
+                </div>
+                <div class="mb-3">
+                    <label for="imageInput" class="form-label">Product Image URL</label>
+                    <input type="text" required class="form-control bg-dark text-light border border-1 border-warning"
+                        id="imageInput">
+                </div>
+                <div class="mb-4">
+                    <label for="priceInput" class="form-label">Product Price</label>
+                    <input type="text" required class="form-control bg-dark text-light border border-1 border-warning"
+                        id="priceInput">
+                </div>
+                <div class="d-flex flex-column flex-sm-row border-top border-2 border-black pt-3">
+                    <button type="submit"
+                        class="btn btn-outline-info mb-3 mb-sm-0 mt-2 mt-sm-0 mb-sm-0 me-sm-3">Insert
+                        new
+                        Product</button>
+                    <button id="reset-btn" type="button" data-bs-toggle="modal" data-bs-target="#myModal"
+                        class="btn btn-outline-info mb-3 mb-sm-0 mt-sm-0 mb-sm-0 me-sm-3">Reset Fields</button>
+                    <button id="del-btn" type="button" data-bs-toggle="modal" data-bs-target="#myModal"
+                        class="btn btn-outline-danger">Delete Product</button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="./script/admin.js"></script>
+</body>
+
+</html>

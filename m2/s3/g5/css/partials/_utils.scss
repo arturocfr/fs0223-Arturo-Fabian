@@ -1,0 +1,39 @@
+$color-warning: rgb(97, 2, 138);
+$bg-secondary: #6c757d;
+
+html,
+body {
+    height: 100%;
+}
+
+main {
+    margin-top: 90px;
+
+    .custom-bg {
+        background-color: #373b3f;
+    }
+
+    div.row.g-3 img {
+        transition: all 1s;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+body {
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: rgba($color-warning, 0.7);
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $bg-secondary;
+        border-radius: 10px;
+    }
+}
