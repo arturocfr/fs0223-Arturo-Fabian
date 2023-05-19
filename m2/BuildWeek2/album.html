@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/circular-font.css">
+    <link rel="stylesheet" href="./assets/css/styleA.css">
+    <link rel="stylesheet" href="./assets/css/davide.css">
+    <title>Album page</title>
+</head>
+<body>
+    <div class="container-fluid bg-black mb-5">
+        <div class="row">
+            <div class="col-3 m-0 d-none d-lg-block">
+                <nav class="navbar" data-bs-theme="dark">
+                    <div class="container-fluid">
+                        <div class="" id="navbarNavAltMarkup">
+                            <div class="dropdown">
+                                <button class="border-0 bg-black text-light" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    . . .
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">File</a></li>
+                                    <li><a class="dropdown-item" href="#">Modifica</a></li>
+                                    <li><a class="dropdown-item" href="#">Visualizza</a></li>
+                                    <li><a class="dropdown-item" href="#">Riproduzione</a></li>
+                                    <li><a class="dropdown-item" href="#">Assistenza</a></li>
+                                </ul>
+                            </div>
+                            <div class="navbar-nav my-3">
+                                <a class="nav-link py-1" aria-current="page" href="index-dinamic.html"><i
+                                        class=" bi bi-house-door me-2"></i> Home</a>
+                                <a id="cerca" class="nav-link py-1" href="#"><i class="bi bi-search me-2"></i> Cerca</a>
+                                <a class="nav-link py-1" href="#"><i class="bi bi-book me-2"></i> La tua libreria</a>
+                            </div>
+                            <div class="navbar-nav my-3">
+                                <a class="nav-link py-1" aria-current="page" href="#">Crea playilist</a>
+                                <a class="nav-link py-1" href="#">Brani che ti piacciono</a>
+                                <a class="nav-link py-1" href="#">I tuoi episodi</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <hr class="m-0 text-light">
+                <nav class="navbar" data-bs-theme="dark">
+                    <div class="container-fluid">
+                        <div class="" id="navbarNavAltMarkup">
+                            <div class="navbar-nav my-3 ">
+                                <a class="nav-link py-1" aria-current="page" href="#">early stage emily syndrome
+                                    sett-ott 2022.</a>
+                                <a class="nav-link py-1 " href="#">Be The Young</a>
+                                <a class="nav-link py-1 " href="#">saggio vibes # DA</a>
+                                <a class="nav-link py-1 " href="#">main character energy (mag-giu 2022)</a>
+                                <a class="nav-link py-1 " href="#">that fucking mood</a>
+                                <a class="nav-link py-1 " href="#">VEE, CARLOTTA E GIACOMO VANNO A BOSIO</a>
+                                <a class="nav-link py-1 " href="#">An Emily Winchester kind of mood \ 4</a>
+                                <a class="nav-link py-1 " href="#">landing page (mar-apr 2022)</a>
+                                <a class="nav-link py-1 " href="#">2021 lol</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="col p-0" id="container-color">
+                
+                <div id="cercaBar" class="container-fluid d-none">
+                    <div class="row">
+                        <div class="col-3 my-3">
+                            <form class="d-flex" role="search">
+                                <input id="inputSearch" class="form-control me-2 bg-dark border-black text-light" type="search" placeholder="Search" aria-label="Search" onkeyup="debounce()">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- togliere -->
+                <div  id="colCentrale">
+                    <div class="row d-flex mt-2">
+                        <div class="col">
+                            <div>
+                                <a class="btn btn-secondary rounded-circle bg-dark border-0 ms-3"  href="index-dinamic.html"><i class="fas fa-chevron-left"></i></a>
+                                <a class="btn btn-secondary rounded-circle bg-dark border-0 ms-3"  href="#"><i class="fas fa-chevron-right"></i></a>
+                            </div>
+
+                        </div>
+                        <div class="col text-end">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary bg-dark rounded-pill  align-items-center border-0 ps-1 me-3 bg-opacity-75" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <p class="text-light m-0 "><img class="rounded-circle" style="width: 30px;" src="https://cdn.lindipendente.online/wp-content/uploads/2023/05/Foto_segnaletica_di_Matteo_Messina_Denaro_2023-1.jpg" alt=""><span id="Matteo" class="ms-1">Matteo Messina Denaro</span></p>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Account</a></li>
+                                    <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                    <li><a class="dropdown-item" href="#">Sessione privata</a></li>
+                                    <li><a class="dropdown-item" href="#">impostazioni</a></li>
+                                    <li><a class="dropdown-item p-0" href="#"><hr class="m-0"></a></li>
+                                    <li><a class="dropdown-item" href="#">Esci</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex mt-3">
+                        <div class="col-3" id="container">
+                            <img class="ms-3 shadow w-100"  id="immmagine_album" src=""  alt="immagine-album" onload="start()" crossorigin="anonymous">
+                        </div>
+                        <div class=" col-9 text-light d-flex flex-column justify-content-end ps-5">
+                            <p class="mb-0">ALBUM</p>
+                            <h1 class="mb-5" style="font-size: 80px;" id="titoloAlbume"></h1>
+                            <p class="mb-0" id="infoAlbume"></p>
+                        </div>
+                    </div>
+                    <div class="container-fluid text-secondary bg-black bg-opacity-25 mt-5">
+                        <div class="row mx-2">
+                            <div class="col">
+                                <i class="fs-2 bi bi-play-circle-fill text-success ms-2 rounded-circle"></i>
+                                <i class="far fa-heart ms-3"></i>
+                                <i class="far fa-arrow-alt-circle-down ms-3"></i>
+                                <i class="fas fa-ellipsis-h ms-3"></i>
+                            </div>
+        
+                        </div>
+                        <div class="row mt-3 mx-2">
+                            <div class="col ms-3">
+                                # <span class="ms-2">TITOLO</span> 
+                            </div>
+                            <div class="col text-end">
+                                RIPRODUZIONE
+                            </div>
+                            <div class="col text-end me-5">
+                                <i class="bi bi-clock"></i>
+                            </div>
+                        </div>
+                        <hr class="mt-1">
+                    <div id="album">
+                    </div>
+                    </div>
+                </div>
+                <div id="searchAppend" class="d-none d-flex flex-wrap">
+                </div>
+                
+        </div>
+
+
+            <div class="col-2 bg-black text-light d-none d-lg-block">
+                <div class="d-flex flex-row-reverse my-2">
+                    <div><i class="far fa-window-minimize"></i> <i class="far fa-window-restore mx-5"></i> <svg
+                            class="ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-x-lg" viewBox="0 0 16 16">
+                            <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                        </svg></div>
+                </div>
+                <div class="">
+                    <h5 class="mb-4 d-flex justify-content-between">
+                        <p> Attività amici</p><span class="opacity-50"><i class="bi bi-person-plus"></i><svg
+                                class="ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                            </svg></span>
+                    </h5>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <img class="img"
+                            src="https://media.posterlounge.com/img/products/700000/696873/696873_poster_l.jpg"
+                            alt="immagine-profilo">
+                    </div>
+                    <div class="col opacity-50">
+                        <div class="d-flex justify-content-between">
+                            <h5><a class="link-light link-offset-2 link-underline link-underline-opacity-0"
+                                    href="#">Simone Ciccarelli</a></h5>
+                            <span class="span">4 ore</span>
+                        </div>
+                        <p class="m-0"><a class="link-light link-offset-2 link-underline link-underline-opacity-0"
+                                href="#">In Camera . Yumi Zouma</a></p>
+                        <p><a class="link-light link-offset-2 link-underline link-underline-opacity-0" href="#">EP
+                                III</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <img class="img" src="https://i.ebayimg.com/images/g/FcYAAOSw92xhyt4G/s-l500.jpg"
+                            alt="immagine-profilo">
+                    </div>
+                    <div class="col opacity-50">
+                        <div class="d-flex justify-content-between">
+                            <h5><a class="link-light link-offset-2 link-underline link-underline-opacity-0"
+                                    href="#">Cristiano Damiani</a></h5>
+                            <span class="span">8 ore</span>
+                        </div>
+                        <p class="m-0"><a class="link-light link-offset-2 link-underline link-underline-opacity-0"
+                                href="#">Aimed to Kill . Jade LeMac</a></p>
+                        <p><a class="link-light link-offset-2 link-underline link-underline-opacity-0" href="#">Aimed to
+                                Kill</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <img class="img" src="https://i.pinimg.com/736x/3d/b1/b5/3db1b551472bfd3430d73c3bc55f8b33.jpg"
+                            alt="immagine-profilo">
+                    </div>
+                    <div class="col opacity-50">
+                        <div class="d-flex justify-content-between">
+                            <h5><a class="link-light link-offset-2 link-underline link-underline-opacity-0"
+                                    href="#">Marta Grammatico</a></h5>
+                            <span class="span">3 giorni</span>
+                        </div>
+                        <p class="m-0"><a class="link-light link-offset-2 link-underline link-underline-opacity-0"
+                                href="#">New Kings . Sleeping Wolf</a></p>
+                        <p><a class="link-light link-offset-2 link-underline link-underline-opacity-0" href="#">Twint
+                                Badass mood</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid fixed-bottom mt-4 p-0 ">
+        <audio id="audio-player" src="https://cdns-preview-7.dzcdn.net/stream/c-7347e9b2b7eb3157b9fd696d01dcb0b5-7.mp3"></audio>
+        <div class=" col-12 music-player">
+            <div class="song-bar">
+                <div class="song-infos">
+                    <div class="image-container">
+                        <img src="https://e-cdns-images.dzcdn.net/images/cover/8b8fc5d117f9357b79f0a0a410a170e8/56x56-000000-80-0-0.jpg" alt="" />
+                    </div>
+                    <div class="song-description">
+                        <p class="title">
+                            'Killer Queen
+                        </p>
+                        <p class="artist">Queen</p>
+                    </div>
+                </div>
+                <div class="icons">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-compress d-none d-sm-flex"></i>
+                </div>
+            </div>
+            <div class="progress-controller">
+ 
+                    <div class="control-buttons">
+                        <i class="fas fa-random  d-none d-sm-flex"></i>
+                        <i class="fas fa-step-backward d-none d-sm-flex"></i>
+                        <i class="play-pause fas fa-play"></i>
+                        <i class="fas fa-step-forward  d-none d-sm-flex"></i>
+                        <i class="fas fa-undo-alt  d-none d-sm-flex"></i>
+                    </div>
+                    <div class="progress-container  d-none d-sm-flex">
+                        <span>0:00</span>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <span>3:15</span>
+                    </div>
+            </div>
+            <div class="other-features d-none d-sm-flex">
+                <i class="fas fa-list-ul"></i>
+                <i class="fas fa-desktop"></i>
+                <div class="volume-bar">
+                    <i class="fas fa-volume-down"></i>
+                    <input type="range" min="0" max="1" step="0.1" value="1" class="volume-slider">
+                </div>
+                <i class="bi bi-arrows-angle-expand"></i>
+            </div>
+            
+        </div>
+        <div class="row d-lg-none text-white navbar-nav" id="bottom-navbar">
+            <div class="col-12 d-flex justify-content-evenly">
+                <a class="text-center nav-link"  aria-current="page" href="index-dinamic.html">
+                    <i class="bi bi-house-door-fill"></i>
+                    <p>Home</p>
+                </a>
+                <a id="cerca" class="nav-link text-center text-secondary">
+                    <i class="bi bi-search"></i>
+                    <p>Cerca</p>
+                </a>
+                <a class="nav-link  text-center text-secondary">
+                    <i class="bi bi-collection"></i>
+                    <p>La tua libreria</p>
+                </a>
+            </div>
+        </div>
+    </div> 
+    
+</body>
+
+<script src="./script/album-player.js"></script>
+<script src="./script/album.js"></script>
+<script src="script/color.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</html>
+

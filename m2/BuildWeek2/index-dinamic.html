@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epify</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/circular-font.css">
+    <link rel="stylesheet" href="./assets/css/davide.css">
+    <link rel="stylesheet" href="./assets/css/styleA.css">
+
+</head>
+
+<body>
+    <div class="container-fluid bg-black mb-5">
+        <div class="row">
+            <div class="col-3 m-0 d-none d-lg-block">
+                <nav class="navbar" data-bs-theme="dark">
+                    <div class="container-fluid">
+                        <div class="" id="navbarNavAltMarkup">
+                            <div class="dropdown">
+                                <button class="border-0 bg-black text-light" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    . . .
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">File</a></li>
+                                    <li><a class="dropdown-item" href="#">Modifica</a></li>
+                                    <li><a class="dropdown-item" href="#">Visualizza</a></li>
+                                    <li><a class="dropdown-item" href="#">Riproduzione</a></li>
+                                    <li><a class="dropdown-item" href="#">Assistenza</a></li>
+                                </ul>
+                            </div>
+                            <div class="navbar-nav my-3">
+                                <a class="nav-link py-1" aria-current="page" href="index-dinamic.html"><i
+                                        class=" bi bi-house-door me-2"></i> Home</a>
+                                <a id="cerca" class="nav-link py-1" href="#"><i class="bi bi-search me-2"></i> Cerca</a>
+                                <a class="nav-link py-1" href="#"><i class="bi bi-book me-2"></i> La tua libreria</a>
+                            </div>
+                            <div class="navbar-nav my-3">
+                                <a class="nav-link py-1" aria-current="page" href="#">Crea playilist</a>
+                                <a class="nav-link py-1" href="#">Brani che ti piacciono</a>
+                                <a class="nav-link py-1" href="#">I tuoi episodi</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <hr class="m-0 text-light">
+                <nav class="navbar" data-bs-theme="dark">
+                    <div class="container-fluid">
+                        <div class="" id="navbarNavAltMarkup">
+                            <div class="navbar-nav my-3 ">
+                                <a class="nav-link py-1" aria-current="page" href="#">early stage emily syndrome
+                                    sett-ott 2022.</a>
+                                <a class="nav-link py-1 " href="#">Be The Young</a>
+                                <a class="nav-link py-1 " href="#">saggio vibes # DA</a>
+                                <a class="nav-link py-1 " href="#">main character energy (mag-giu 2022)</a>
+                                <a class="nav-link py-1 " href="#">that fucking mood</a>
+                                <a class="nav-link py-1 " href="#">VEE, CARLOTTA E GIACOMO VANNO A BOSIO</a>
+                                <a class="nav-link py-1 " href="#">An Emily Winchester kind of mood \ 4</a>
+                                <a class="nav-link py-1 " href="#">landing page (mar-apr 2022)</a>
+                                <a class="nav-link py-1 " href="#">2021 lol</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+
+            <div class="col" id="color-cent-a">
+                
+                <div id="cercaBar" class="container-fluid d-none">
+                    <div class="row">
+                        <div class="col-3 my-3">
+                            <form class="d-flex" role="search">
+                                <input id="inputSearch" class="form-control me-2 bg-dark border-black text-light" type="search" placeholder="Search" aria-label="Search" onkeyup="debounce()">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- inizio col centrale -->
+                <div id="colCentrale">
+                <div class="container-fluid my-5" id="header">
+
+                    <div class="row">
+
+                        <div class="col-2 p-3 d-flex align-items-center d-none d-sm-flex">
+                            <img src="https://e-cdns-images.dzcdn.net/images/cover/4a2497e819405074b107b3bce1d95cf9/1000x1000-000000-80-0-0.jpg" alt="">
+                        </div>
+                        <div class="col-8 p-3">
+                            <p class="header-para">ALBUM</p>
+                            <h1 class="fs-2">Boulevard of Broken Dreams</h1>
+                            <p class="header-para"><a href="artist.html?artist_id=52" class="text-white text-decoration-none">Green Day</a></p>
+                            <p class="header-para">Ascolta il nuovo singolo dei <a href="artist.html?artist_id=52" class="text-white text-decoration-none">Green Day</a></p>
+                            <div class="d-flex align-items-center">
+                                <button class="header-button">Play</button>
+                                <button class="header-button">Salva</button>
+                                <i class="bi bi-three-dots text-white"></i>
+                            </div>
+                        </div>
+                        <div class="col-2 p-3 text-secondary d-none d-sm-flex">
+                            <p class="fs-6">NASCONDI ANNUNCI</p>
+                        </div>
+                    </div>
+                </div>
+                <main>
+                    <article>
+                        <div class="container-fluid m-0">
+                            <div class="row">
+                                <div class="col-12 d-flex justify-content-between align-items-center">
+                                    <h4>Buonasera</h4>
+                                    <div>
+                                        <i class="bi bi-bell ms-3"></i><i class="bi bi-clock-history ms-3 p-0 rounded-1"></i><i
+                                            class="bi bi-gear ms-3"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <p>Musica</p>
+                                <p>Podcast e show</p>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row " id="album-first">
+                                <div class="mb-3 col-6 col-lg-4 d-flex align-items-center bg-dark text-white-3 rounded-1 p-0">
+                                    <div id="img-container" class="d-flex flex-wrap">
+                                        <img src="https://e-cdns-images.dzcdn.net/images/cover/10e6b28ed3ec7c157844b3187d0ac2f4/56x56-000000-80-0-0.jpg" alt="" id="sola" />
+                                    </div>
+                                    <div id="testo3">
+                                        <p class="ms-2 bg-dark text-white-3"><a href="album.html?id_album=270615252">Nevermind (30th Anniversary Super Deluxe)</a></p>
+                                    </div>
+                                </div>
+                                <div class="mb-3 col-6 col-lg-4 d-flex align-items-center bg-dark text-white-3 rounded-1 p-0">
+                                    <div id="img-container" class="d-flex flex-wrap">
+                                        <img src="https://api.deezer.com/album/9410100/image" alt="" id="sola" />
+                                    </div>
+                                    <div id="testo3">
+                                        <p class="ms-2 bg-dark text-white-3"><a href="album.html?id_album=9410100">Back In Black</a></p>
+                                    </div>
+                                </div>
+                                <div class="mb-3 col-6 col-lg-4 d-flex align-items-center bg-dark text-white-3 rounded-1 p-0">
+                                    <div id="img-container" class="d-flex flex-wrap">
+                                        <img src="https://api.deezer.com/album/212377/image" alt="" id="sola" />
+                                    </div>
+                                    <div id="testo3">
+                                        <p class="ms-2 bg-dark text-white-3"><a href="album.html?id_album=212377">Metallica</a></p>
+                                    </div>
+                                </div>
+                               
+                                <div class="mb-3 col-6 col-lg-4 d-flex align-items-center bg-dark text-white-3 rounded-1 p-0">
+                                    <div id="img-container" class="d-flex flex-wrap">
+                                        <img src="https://e-cdns-images.dzcdn.net/images/cover/8b8fc5d117f9357b79f0a0a410a170e8/250x250-000000-80-0-0.jpg" alt="" id="sola" />
+                                    </div>
+                                    <div id="testo3">
+                                        <p class="ms-2 bg-dark text-white-3"><a href="album.html?id_album=75621062"> Rhapsody (The Original Soundtrack)</a></p>
+                                    </div>
+                                </div>
+                                <div class="mb-3 col-6 col-lg-4 d-flex align-items-center bg-dark text-white-3 rounded-1 p-0">
+                                    <div id="img-container" class="d-flex flex-wrap">
+                                        <img src="https://api.deezer.com/album/6591403/image" alt="" id="sola" />
+                                    </div>
+                                    <div id="testo3">
+                                        <p class="ms-2 bg-dark text-white-3"><a href="album.html?id_album=6591403">About That Life</a></p>
+                                    </div>
+                                </div>
+                                <div class="mb-3 col-6 col-lg-4 d-flex align-items-center bg-dark text-white-3 rounded-1 p-0">
+                                    <div id="img-container" class="d-flex flex-wrap">
+                                        <img src="https://api.deezer.com/album/299319/image" alt="" id="sola" />
+                                    </div>
+                                    <div id="testo3">
+                                        <p class="ms-2 bg-dark text-white-3"><a href="album.html?id_album=299319">Verità Supposte</a></p>
+                                    </div>
+                                </div>
+                                
+            
+                            </div>
+                    </article>
+
+                    <div class="cotainer text-light  py-4 mb-5" id="altro">
+                        <div class="row justify-content-between  text-light my-4 fw-bold">
+                            <div class="col-12 d-flex justify-content-between align-items-center">
+                                <a class="nav-link d-inline-flex p-0" aria-current="page" href="#">Altro di ciò che ti piace</a>
+                                <a class="d-inline-flex nav-link " aria-current="page" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">VISUALIZZA TUTTO</a>
+                            </div>
+                        </div>
+                        <div class="row text-light py-2 rounded-2 d-flex flex-wrap justify-content-evenly collapse multi-collapse" id="multiCollapseExample1">
+                            <div Id="carta" class="col-11 col-sm-4 col-md-3 col-lg-2 m-2 p-2 text-light">
+                                <div id="cont-img">
+                                    <img src="https://e-cdns-images.dzcdn.net/images/cover/e2b36a9fda865cb2e9ed1476b6291a7d/250x250-000000-80-0-0.jpg" class="img-fluid" />
+                                </div>
+                                <section class="fw-bold lh-sm">
+                                    <p><a href="album.html?id_album=119606">Curtain Call: The Hits</a></p>
+                                    <p class="fw-light"><a href="artist.html?artist_id=13">Eminem</a></p>
+                                </section>
+                            </div>
+                            <div Id="carta" class="col-11 col-sm-4 col-md-3 col-lg-2 m-2 p-2 text-light">
+                                <div id="cont-img">
+                                    <img src="https://e-cdns-images.dzcdn.net/images/cover/3a31bfbc6678856d2cfe10dbb22b8a24/500x500-000000-80-0-0.jpg" class="img-fluid" />
+                                </div>
+                                <section class="fw-bold lh-sm">
+                                    <p><a href="album.html?id_album=301663">Parachutes</a></p>
+                                    <p class="fw-light"><a href="artist.html?artist_id=892">Coldplay</a></p>
+                                </section>
+                            </div>
+                            <div Id="carta" class="col-11 col-sm-4 col-md-3 col-lg-2 m-2 p-2 text-light">
+                                <div id="cont-img">
+                                    <img src="https://e-cdns-images.dzcdn.net/images/cover/4642b8e3e0a89f92a6e2bfed13d8f31c/500x500-000000-80-0-0.jpg" class="img-fluid" />
+                                </div>
+                                <section class="fw-bold lh-sm">
+                                    <p><a href="album.html?id_album=110040592">Hollywood's Bleeding</a></p>
+                                    <p class="fw-light"><a href="artist.html?artist_id=823">Ozzy Osbourne</a></p>
+                                </section>
+                            </div>
+                            <div Id="carta" class="col-11 col-sm-4 col-md-3 col-lg-2 m-2 p-2 text-light">
+                                <div id="cont-img">
+                                    <img src="https://e-cdns-images.dzcdn.net/images/cover/c811048a671ff7cbfc0600b96ad46519/500x500-000000-80-0-0.jpg" class="img-fluid" />
+                                </div>
+                                <section class="fw-bold lh-sm">
+                                    <p><a href="album.html?id_album=350228297">Songs of Sonder</a></p>
+                                    <p class="fw-light"><a href="artist.html?artist_id=67">Kiss</a></p>
+                                </section>
+                            </div>
+                            <div Id="carta" class="col-11 col-sm-4 col-md-3 col-lg-2 m-2 p-2 text-light">
+                                <div id="cont-img">
+                                    <img src="https://e-cdns-images.dzcdn.net/images/cover/8bfe7b3b0985d9ff0751090fb2b6f73f/500x500-000000-80-0-0.jpg" class="img-fluid" />
+                                </div>
+                                <section class="fw-bold lh-sm">
+                                    <p><a href="album.html?id_album=66644272">Appetite for Destruction</a></p>
+                                    <p class="fw-light"><a href="artist.html?artist_id=663">Guns'n'Roses</a></p>
+                                </section>
+                            </div>
+                            <div Id="carta" class="col-11 col-sm-4 col-md-3 col-lg-2 m-2 p-2 text-light">
+                                <div id="cont-img">
+                                    <img src="https://e-cdns-images.dzcdn.net/images/cover/c87dc0f243749f7a7c6cd37c9f429be7/500x500-000000-80-0-0.jpg" class="img-fluid" />
+                                </div>
+                                <section class="fw-bold lh-sm">
+                                    <p><a href="album.html?id_album=6872781">Hail to the King</a></p>
+                                    <p class="fw-light"><a href="artist.html?artist_id=406">Avenged Sevenfold</a></p>
+                                </section>
+                            </div>
+                            <div Id="carta" class="col-11 col-sm-4 col-md-3 col-lg-2 m-2 p-2 text-light">
+                                <div id="cont-img">
+                                    <img src="https://e-cdns-images.dzcdn.net/images/cover/a0ad67d1beb761f2cb9f8b60e5bcf07a/500x500-000000-80-0-0.jpg" class="img-fluid" />
+                                </div>
+                                <section class="fw-bold lh-sm">
+                                    <p><a href="album.html?id_album=423368">Michael Jackson's This Is It</a></p>
+                                    <p class="fw-light"><a href="artist.html?artist_id=259">Michael Jackson</a></p>
+                                </section>
+                            </div>
+                            <div Id="carta" class="col-11 col-sm-4 col-md-3 col-lg-2 m-2 p-2 text-light">
+                                <div id="cont-img">
+                                    <img src="https://e-cdns-images.dzcdn.net/images/cover/35b093d22fe1539003d5d18dd8f309eb/500x500-000000-80-0-0.jpg" class="img-fluid" />
+                                </div>
+                                <section class="fw-bold lh-sm">
+                                    <p><a href="album.html?id_album=356130">Vol. 3: The Subliminal Verses</a></p>
+                                    <p class="fw-light"><a href="artist.html?artist_id=117">Slipknot</a></p>
+                                </section>
+                            </div>
+                            <div Id="carta" class="col-11 col-sm-4 col-md-3 col-lg-2 m-2 p-2 text-light">
+                                <div id="cont-img">
+                                    <img src="https://e-cdns-images.dzcdn.net/images/cover/3aed94e2a791cd0f1a3ec5c306f65e9e/500x500-000000-80-0-0.jpg" class="img-fluid" />
+                                </div>
+                                <section class="fw-bold lh-sm">
+                                    <p><a href="album.html?id_album=721846">Big Hits (High Tide and Green Grass)</a></p>
+                                    <p class="fw-light"><a href="artist.html?artist_id=11">The Rolling Stones</a></p>
+                                </section>
+                            </div>
+                            <div Id="carta" class="col-11 col-sm-4 col-md-3 col-lg-2 m-2 p-2 text-light">
+                                <div id="cont-img">
+                                    <img src="https://e-cdns-images.dzcdn.net/images/cover/821ea2e8516c00469cae71f25a457093/500x500-000000-80-0-0.jpg" class="img-fluid" />
+                                </div>
+                                <section class="fw-bold lh-sm">
+                                    <p><a href="album.html?id_album=226069">Dire Straits</a></p>
+                                    <p class="fw-light"><a href="artist.html?artist_id=176">Dire Straits</a></p>
+                                </section>
+                            </div>
+
+                        <div>
+                    </div>
+                </main>
+            </div>
+                <div id="searchAppend" class="d-none d-flex flex-wrap">
+                </div>
+
+                <!-- fine col centrale -->
+
+            </div>
+            <div class="col-2 bg-black text-light mt-3 d-none d-lg-block">
+                <div class="">
+                    <h5 class="mb-4 d-flex justify-content-between">
+                        <p> Attività amici</p><span class="opacity-50"><i class="bi bi-person-plus"></i><svg
+                                class="ms-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                            </svg></span>
+                    </h5>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <img class="img"
+                            src="https://media.posterlounge.com/img/products/700000/696873/696873_poster_l.jpg"
+                            alt="immagine-profilo">
+                    </div>
+                    <div class="col opacity-50">
+                        <div class="d-flex justify-content-between">
+                            <h5><a class="link-light link-offset-2 link-underline link-underline-opacity-0"
+                                    href="#">Simone Ciccarelli</a></h5>
+                            <span class="span">4 ore</span>
+                        </div>
+                        <p class="m-0"><a class="link-light link-offset-2 link-underline link-underline-opacity-0"
+                                href="#">In Camera . Yumi Zouma</a></p>
+                        <p><a class="link-light link-offset-2 link-underline link-underline-opacity-0" href="#">EP
+                                III</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <img class="img" src="https://i.ebayimg.com/images/g/FcYAAOSw92xhyt4G/s-l500.jpg"
+                            alt="immagine-profilo">
+                    </div>
+                    <div class="col opacity-50">
+                        <div class="d-flex justify-content-between">
+                            <h5><a class="link-light link-offset-2 link-underline link-underline-opacity-0"
+                                    href="#">Cristiano Damiani</a></h5>
+                            <span class="span">8 ore</span>
+                        </div>
+                        <p class="m-0"><a class="link-light link-offset-2 link-underline link-underline-opacity-0"
+                                href="#">Aimed to Kill . Jade LeMac</a></p>
+                        <p><a class="link-light link-offset-2 link-underline link-underline-opacity-0" href="#">Aimed to
+                                Kill</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <img class="img" src="https://i.pinimg.com/736x/3d/b1/b5/3db1b551472bfd3430d73c3bc55f8b33.jpg"
+                            alt="immagine-profilo">
+                    </div>
+                    <div class="col opacity-50">
+                        <div class="d-flex justify-content-between">
+                            <h5><a class="link-light link-offset-2 link-underline link-underline-opacity-0"
+                                    href="#">Marta Grammatico</a></h5>
+                            <span class="span">3 giorni</span>
+                        </div>
+                        <p class="m-0"><a class="link-light link-offset-2 link-underline link-underline-opacity-0"
+                                href="#">New Kings . Sleeping Wolf</a></p>
+                        <p><a class="link-light link-offset-2 link-underline link-underline-opacity-0" href="#">Twint
+                                Badass mood</a></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid fixed-bottom mt-4 p-0 ">
+        <audio id="audio-player" src="https://cdns-preview-7.dzcdn.net/stream/c-7347e9b2b7eb3157b9fd696d01dcb0b5-7.mp3"></audio>
+        <div class=" col-12 music-player">
+            <div class="song-bar">
+                <div class="song-infos">
+                    <div class="image-container">
+                        <img src="https://e-cdns-images.dzcdn.net/images/cover/8b8fc5d117f9357b79f0a0a410a170e8/56x56-000000-80-0-0.jpg" alt="" />
+                    </div>
+                    <div class="song-description">
+                        <p class="title">
+                            Killer Queen
+                        </p>
+                        <p class="artist">Queen</p>
+                    </div>
+                </div>
+                <div class="icons">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-compress d-none d-sm-flex"></i>
+                </div>
+            </div>
+            <div class="progress-controller">
+ 
+                    <div class="control-buttons">
+                        <i class="fas fa-random  d-none d-sm-flex"></i>
+                        <i class="fas fa-step-backward d-none d-sm-flex"></i>
+                        <i class="play-pause fas fa-play"></i>
+                        <i class="fas fa-step-forward  d-none d-sm-flex"></i>
+                        <i class="fas fa-undo-alt  d-none d-sm-flex"></i>
+                    </div>
+                    <div class="progress-container  d-none d-sm-flex">
+                        <span>0:00</span>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <span>3:15</span>
+                    </div>
+            </div>
+            <div class="other-features d-none d-sm-flex">
+                <i class="fas fa-list-ul"></i>
+                <i class="fas fa-desktop"></i>
+                <div class="volume-bar">
+                    <i class="fas fa-volume-down"></i>
+                    <input type="range" min="0" max="1" step="0.1" value="1" class="volume-slider">
+                </div>
+                <i class="bi bi-arrows-angle-expand"></i>
+            </div>
+            
+        </div>
+        <div class="row d-lg-none text-white navbar-nav" id="bottom-navbar">
+            <div class="col-12 d-flex justify-content-evenly">
+                <a class="text-center nav-link"  aria-current="page" href="index-dinamic.html">
+                    <i class="bi bi-house-door-fill"></i>
+                    <p>Home</p>
+                </a>
+                <a id="cerca" class="nav-link text-center text-secondary">
+                    <i class="bi bi-search"></i>
+                    <p>Cerca</p>
+                </a>
+                <a class="nav-link  text-center text-secondary">
+                    <i class="bi bi-collection"></i>
+                    <p>La tua libreria</p>
+                </a>
+            </div>
+        </div>
+    </div> 
+    <script src="script/index.js"></script>
+    <script src="./script/player.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
+
+</html>
