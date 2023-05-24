@@ -1,9 +1,9 @@
 "use strict";
 class Lavoratore {
     constructor(reddito) {
-        this.codredd = 78; //metto 78% perché non so nulla sulla finanza.. :')
-        this.tasseINPS = 3599; //tassa fissa iniziale di 3599
-        this.tasseIRPEF = 23; //fissa iniziale al 23%
+        this.codredd = 60;
+        this.tasseINPS = 4009;
+        this.tasseIRPEF = 21;
         this.redditoAnnuoLordo = reddito;
     }
 }
@@ -19,5 +19,9 @@ class Calcolo extends Lavoratore {
             ? (this.tasseINPS = (this.redditoAnnuoLordo * 24) / 100)
             : 0; // setta tassa inps
         return this.tasseINPS;
+    }
+    get getTasseIRPEF() {
+        this.getUtileTasse < 15000 ? 0 : (this.tasseIRPEF = 27);
+        return (this.getUtileTasse * this.tasseIRPEF) / 100;
     }
 }
