@@ -1,4 +1,4 @@
-import { byid, createEl } from "./module/module.js";
+import { byid, createEl } from "../assets/module/module";
 
 type Registry = {
     id: number;

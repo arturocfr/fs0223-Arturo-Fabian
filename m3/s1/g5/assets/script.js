@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const module_js_1 = require("./module/module.js");
+const module_1 = require("../assets/module/module");
 class Smartphone {
     constructor(_carica, _elementsHTML) {
         this.numeroChiamate = 0;
@@ -83,7 +83,7 @@ class Smartphone {
             this.mostraRegistroChiamate.forEach((el) => {
                 var _a;
                 //
-                let col = (0, module_js_1.createEl)("div", [
+                let col = (0, module_1.createEl)("div", [
                     "col",
                     "text-center",
                     "pb-2",
@@ -92,9 +92,9 @@ class Smartphone {
                     "border-1",
                     "border-black",
                 ]);
-                let primo_p = (0, module_js_1.createEl)("p", ["m-0"], `ID: ${el.id}`);
-                let secondo_p = (0, module_js_1.createEl)("p", ["m-0", "mt-1"], `Durata: ${el.durata}`);
-                let terzo_p = (0, module_js_1.createEl)("p", ["m-0"], `Data: ${el.date}`);
+                let primo_p = (0, module_1.createEl)("p", ["m-0"], `ID: ${el.id}`);
+                let secondo_p = (0, module_1.createEl)("p", ["m-0", "mt-1"], `Durata: ${el.durata}`);
+                let terzo_p = (0, module_1.createEl)("p", ["m-0"], `Data: ${el.date}`);
                 col.append(primo_p, secondo_p, terzo_p);
                 (_a = this.elementsHTML.callsList) === null || _a === void 0 ? void 0 : _a.append(col);
             });
@@ -103,37 +103,37 @@ class Smartphone {
 }
 window.onload = function () {
     let els_1 = {
-        credito: (0, module_js_1.byid)("credito-one"),
-        numCalls: (0, module_js_1.byid)("num-chiamate-one"),
-        callsList: (0, module_js_1.byid)("dettagli-chiamate-one"),
-        btnRicarica: (0, module_js_1.byid)("ric-one"),
-        inputMin: (0, module_js_1.byid)("num-min-one"),
-        btnEffettuaChiamata: (0, module_js_1.byid)("call-one"),
-        btnMostraRegistro: (0, module_js_1.byid)("reg-one"),
-        btnAzzeraChiamate: (0, module_js_1.byid)("reset-one"),
-        errore: (0, module_js_1.byid)("err-one"),
+        credito: (0, module_1.byid)("credito-one"),
+        numCalls: (0, module_1.byid)("num-chiamate-one"),
+        callsList: (0, module_1.byid)("dettagli-chiamate-one"),
+        btnRicarica: (0, module_1.byid)("ric-one"),
+        inputMin: (0, module_1.byid)("num-min-one"),
+        btnEffettuaChiamata: (0, module_1.byid)("call-one"),
+        btnMostraRegistro: (0, module_1.byid)("reg-one"),
+        btnAzzeraChiamate: (0, module_1.byid)("reset-one"),
+        errore: (0, module_1.byid)("err-one"),
     };
     let els_2 = {
-        credito: (0, module_js_1.byid)("credito-two"),
-        numCalls: (0, module_js_1.byid)("num-chiamate-two"),
-        callsList: (0, module_js_1.byid)("dettagli-chiamate-two"),
-        btnRicarica: (0, module_js_1.byid)("ric-two"),
-        inputMin: (0, module_js_1.byid)("num-min-two"),
-        btnEffettuaChiamata: (0, module_js_1.byid)("call-two"),
-        btnMostraRegistro: (0, module_js_1.byid)("reg-two"),
-        btnAzzeraChiamate: (0, module_js_1.byid)("reset-two"),
-        errore: (0, module_js_1.byid)("err-one"),
+        credito: (0, module_1.byid)("credito-two"),
+        numCalls: (0, module_1.byid)("num-chiamate-two"),
+        callsList: (0, module_1.byid)("dettagli-chiamate-two"),
+        btnRicarica: (0, module_1.byid)("ric-two"),
+        inputMin: (0, module_1.byid)("num-min-two"),
+        btnEffettuaChiamata: (0, module_1.byid)("call-two"),
+        btnMostraRegistro: (0, module_1.byid)("reg-two"),
+        btnAzzeraChiamate: (0, module_1.byid)("reset-two"),
+        errore: (0, module_1.byid)("err-one"),
     };
     let els_3 = {
-        credito: (0, module_js_1.byid)("credito-three"),
-        numCalls: (0, module_js_1.byid)("num-chiamate-three"),
-        callsList: (0, module_js_1.byid)("dettagli-chiamate-three"),
-        btnRicarica: (0, module_js_1.byid)("ric-three"),
-        inputMin: (0, module_js_1.byid)("num-min-three"),
-        btnEffettuaChiamata: (0, module_js_1.byid)("call-three"),
-        btnMostraRegistro: (0, module_js_1.byid)("reg-three"),
-        btnAzzeraChiamate: (0, module_js_1.byid)("reset-three"),
-        errore: (0, module_js_1.byid)("err-three"),
+        credito: (0, module_1.byid)("credito-three"),
+        numCalls: (0, module_1.byid)("num-chiamate-three"),
+        callsList: (0, module_1.byid)("dettagli-chiamate-three"),
+        btnRicarica: (0, module_1.byid)("ric-three"),
+        inputMin: (0, module_1.byid)("num-min-three"),
+        btnEffettuaChiamata: (0, module_1.byid)("call-three"),
+        btnMostraRegistro: (0, module_1.byid)("reg-three"),
+        btnAzzeraChiamate: (0, module_1.byid)("reset-three"),
+        errore: (0, module_1.byid)("err-three"),
     };
     new Smartphone(5, els_1);
     new Smartphone(15, els_2);
