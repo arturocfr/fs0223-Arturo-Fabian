@@ -1,0 +1,38 @@
+input, textarea{
+    width: 100%;
+    border: none;
+    background: rgb(245, 244, 244);
+    border-radius: 2px;
+    &.ng-invalid.ng-touched{
+      border: 1px solid;
+      border-color: red;
+      background-color: rgb(251, 228, 228);
+    }
+  }
+  .form-container{
+    max-width: 500px;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .horizontal-field{
+    display: flex;
+    justify-content: end;
+    .button{
+      border: none;
+      border-radius: 2px;
+      padding: 0.2em 1em;
+    }
+    .saveBtn{
+      background-color: green;
+      color: white;
+      margin-right: 5px;
+      &:hover{
+        background-color: rgb(1, 101, 1);
+      }
+    }
+    .cancelBtn{
+      margin-right: 20px;
+      background-color: white;
+      text-decoration:underline;
+    }
+  }
