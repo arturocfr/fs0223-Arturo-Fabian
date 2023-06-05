@@ -1,0 +1,18 @@
+<app-header></app-header>
+<main class="d-flex flex-column flex-grow-1 text-white p-3 bg-dark">
+    <div class="container-fluid">
+        <h1 class="m-0 mb-5">Like alle foto: {{ likedPhotoArr.length }}</h1>
+        <div class="row row-cols-4 g-4">
+            <div *ngFor="let photo of photoArr"
+                class="col d-flex flex-column border border-1 border-white py-3 justify-content-between">
+                <img [src]="photo.thumbnailUrl">
+                <h4 class="m-0 my-3">{{ photo.title }}</h4>
+                <div class="d-flex justify-content-between">
+                    <button class="btn btn-success" (click)="like(photo, $event)">Like Photo</button>
+                    <button class="btn btn-danger" (click)="del(photo)">Delete Photo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<app-footer></app-footer>
