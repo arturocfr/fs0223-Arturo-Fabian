@@ -1,0 +1,47 @@
+.layout-box{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  
+    overflow: hidden;
+  
+    .page-content{
+      flex-grow: 1;
+      overflow: scroll;
+    }
+  }
+  
+  .top-bar{
+    width: 100%;
+    height: 68px;
+    background: linear-gradient(to right, #12c612, #13c3ef)!important;
+  
+    box-shadow: 0 0 10px 0 rgba(black,0.15);
+  
+    display: flex;
+    flex-shrink: 0; // messo di default cosicché la top bar non si rompa
+  
+    justify-content: center;
+    align-items: center;
+  
+    h1{
+      color: #ffffff;
+      font-size: 30px;
+    }
+  }
+  .completed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    background: white;
+    cursor: pointer;
+    padding-bottom: 3px;
+    color: #12c483;
+  }
+  .completed-box{
+    background: linear-gradient(to right, #12c612, #13c3ef) ;
+    padding: 2px;
+    margin: 5px 0;
+  
+  }

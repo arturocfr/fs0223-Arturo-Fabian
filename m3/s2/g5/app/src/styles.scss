@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+/* Global Style */
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap');
+html, body{
+  height: 100%;
+  font-size: 18px !important;
+  overflow: hidden !important;
+  margin: 0;
+}
+*{
+  font-family:  'Kaisei Opti', serif;
+  text-decoration: none;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5d5d5daa;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: none;
+}

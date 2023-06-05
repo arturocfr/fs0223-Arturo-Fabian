@@ -1,0 +1,15 @@
+<div class="main-container">
+    <div class="notes-list">
+      <div class="ring" *ngIf="loading">Loading<span></span></div>
+    <app-note-card
+    *ngFor="let todo of todos;"
+    [link]="todo.id"
+    (delete)="deleteNote(todo.id)"
+    (check)="checked(todo)"
+    [title]="todo.title"
+    [subtitle]="todo.subtitle"
+    ></app-note-card>
+    </div>
+    <button class="addBtn" routerLink="new">+Add</button>
+  </div>
+  

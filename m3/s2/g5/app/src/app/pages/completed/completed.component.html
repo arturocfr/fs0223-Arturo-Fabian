@@ -1,0 +1,15 @@
+<div class="main-container">
+    <div>Task Completate:</div>
+    <div class="ring" *ngIf="loading">Loading<span></span></div>
+    <button (click)="back()" class="cancelBtn" *ngIf="!loading">Cancel</button>
+    <app-note-card
+      *ngFor="let todo of todos;"
+      [link]="todo.id"
+      (delete)="deleteNote(todo.id)"
+      (check)="checked(todo)"
+      [title]="todo.title"
+      [subtitle]="todo.subtitle"
+      ></app-note-card>
+  
+  </div>
+  
