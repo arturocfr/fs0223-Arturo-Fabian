@@ -1,4 +1,4 @@
-import { Todo } from './../../Models/todo';
+import { Todo } from '../../Models/todo';
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { TodoClass } from 'src/app/Models/todo-class';

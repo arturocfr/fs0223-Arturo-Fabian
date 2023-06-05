@@ -1,9 +1,9 @@
-import { CompletedComponent } from './Pages/completed/completed.component';
+import { CompletedComponent } from './pages/completed/completed.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './Pages/home/home.component';
-import { CheckedComponent } from './Pages/checked/checked.component';
-import { NoteDetailsComponent } from './Pages/note-details/note-details.component';
+import { HomeComponent } from './pages/home/home.component';
+import { CheckedComponent } from './pages/checked/checked.component';
+import { NoteDetailsComponent } from './pages/note-details/note-details.component';
 
 const routes: Routes = [
   { path:'completed', component: CompletedComponent},
